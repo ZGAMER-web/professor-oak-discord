@@ -9,7 +9,7 @@ client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
   
-bot.setPlayingGame("V2.0.0")
+client.setPlayingGame("V2.0.0")
   
   // This is the best way to define args. Trust me.
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
