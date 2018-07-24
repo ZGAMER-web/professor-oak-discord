@@ -1,6 +1,6 @@
 <b><h1>Professor Oak</h1></b>
 <h6>version 2.0.0</h6>
-A Discord Bot that helps local and traveling Trainers alike within a specific community. Quick and easy commands help Trainers get the information or directions they need fast.
+A Discord Bot for Pokemon GO. Quick and easy commands help Trainers get the information or directions they need fast.
 <br><br>
 <b><h2>Information Commands</h2></b><br>
 &bull; List of Alola Pokemon<br>
@@ -35,7 +35,7 @@ A Discord Bot that helps local and traveling Trainers alike within a specific co
 <code>!oak trade</code><br><br>
 
 <br><br>
-<b><h2>Carrollton Gym Commands</h2></b><br>
+<b><h2>Gym Directions</h2></b><br>
 &bull; Bankers Park<br>
 <code>!oak bankerspark</code> or <code>!oak bankers</code><br><br>
 &bull; Buffalo Creek Outdoor Education Center<br>
