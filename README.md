@@ -1,5 +1,5 @@
 <b><h1>Professor Oak</h1></b>
-<h6>version 1.1.0</h6>
+<h6>version 2.0.0</h6>
 A Discord Bot that helps local and traveling Trainers alike within a specific community. Quick and easy commands help Trainers get the information or directions they need fast.
 <br><br>
 <b><h2>Information Commands</h2></b><br>
