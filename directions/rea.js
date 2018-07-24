@@ -1,0 +1,3 @@
+exports.run = (client, message, args) => {
+    message.channel.send("Hello, Trainer. I see you need information on the gym **First REA Substation in Carrollton**. My research shows: Grassy/Dirt parking lot available at the gym, be careful it is hard to see until you are at it, alternate parking is available at the church just past the gym, does not require you to exit the vehicle. https://goo.gl/maps/9u3EaNCn1Xy").catch(console.error);
+}

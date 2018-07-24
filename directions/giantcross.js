@@ -1,0 +1,3 @@
+exports.run = (client, message, args) => {
+    message.channel.send("Hello, Trainer. I see you need information on the gym **Carrollton Giant Cross**. My research shows: you will need to get out of the vehicle, park at the bottom of the car lot (in the top of the movie theater parking lot), free parking, be respectful of the car lot bussines. https://goo.gl/maps/67oRx8mjDVE2").catch(console.error);
+}
