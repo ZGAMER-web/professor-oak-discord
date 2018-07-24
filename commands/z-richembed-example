@@ -1,0 +1,18 @@
+module.exports.run = (client, message, args) => {
+    const Discord = require("discord.js");
+  const embed = new Discord.RichEmbed()
+  
+    .setTitle("")
+    
+    .setColor(0x00AE86)
+    .setDescription("")
+    .setFooter("© Professor Oak", "https://github.com/benjaminatl/discord-professor-oak/blob/master/images/professor-oak-go.png?raw=true")
+    .setImage("")
+    .setThumbnail("")
+    
+    .addField("", "", true)
+
+    .setTimestamp()
+  
+    message.channel.send({embed});
+  }
