@@ -3,14 +3,37 @@
 A Discord Bot that helps local and traveling Trainers alike within a specific community. Quick and easy commands help Trainers get the information or directions they need fast.
 <br><br>
 <b><h2>Information Commands</h2></b><br>
-&bull; Niantic Support Email<br>
+&bull; List of Alola Pokemon<br>
+<code>!oak alola</code> or <code>!oak alolan</code><br><br>
+&bull; Community Day information<br>
+<code>!oak cd</code> or <code>!oak communityday</code><br><br>
+&bull; IV search by CP Google Document<br>
+<code>!oak cpsearch</code><br><br>
+&bull; Eevee Evolution Tricks<br>
+<code>!oak eeveetrick</code><br><br>
+&bull; Niantic support email<br>
 <code>!oak email</code><br><br>
-&bull; What Pokemon IV's are and how to check them<br>
-<code>!oak iv</code><br>
-<br><br>
-<b><h2>Pokemon Commands</h2></b><br>
-&bull; Kyogre<br>
-<code>!oak kyogre</code><br>
+&bull; EX Raid information<br>
+<code>!oak exraid</code><br><br>
+&bull; Information about the Friends feature<br>
+<code>!oak friends</code><br><br>
+&bull; Information about the Gifts feature<br>
+<code>!oak gift</code><br><br>
+&bull; Local Google Map <i>(shows local Gyms, EX Raid Gyms, Pokestops, Water Spawns & Nesting Locations)</i><br>
+<code>!oak googlemap</code><br><br>
+&bull; Bot Help<br>
+<code>!oak help</code><br><br>
+&bull; Information on & how to check Pokemon IV<br>
+<code>!oak iv</code><br><br>
+&bull; Silph Road worldwide map of Chats<br>
+<code>!oak leaguemap</code><br><br>
+&bull; Silph Road worldwide Nest Map<br>
+<code>!oak nestatlas</code><br><br>
+&bull; Local based Raid & Trainer activity times<br>
+<code>!oak raidtimes</code><br><br>
+&bull; Information about the the Trading feature<br>
+<code>!oak trade</code><br><br>
+
 <br><br>
 <b><h2>Carrollton Gym Commands</h2></b><br>
 &bull; Bankers Park<br>
