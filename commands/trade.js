@@ -6,7 +6,7 @@ module.exports.run = (client, message, args) => {
     
     .setColor(0x00AE86)
     .setDescription("If you’re near a friend and have a Trainer Level of 10 or higher, you can trade Pokémon you’ve caught with that friend. Completing a trade earns a bonus Candy for the Pokémon you’ve traded away, and that bonus can increase if the Pokémon you traded were caught in locations far apart from each other! All trades are powered by Stardust, and some trades require more Stardust than others. As you build your Friendship Level with the friend you are trading with, you’ll find that you can complete the trade with much less Stardust.")
-    .setFooter("© Professor Oak", "https://github.com/benjaminatl/discord-professor-oak/blob/master/images/professor-oak-go.png?raw=true")
+    .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
     .setImage("https://pokemongolive.com/img/posts/normaltrade.png")
       
     .addField("Trading With Friends", "You can trade with a Friend only when near eachother.")
