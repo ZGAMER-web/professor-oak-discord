@@ -16,7 +16,7 @@ const embed = new Discord.RichEmbed()
   .addField("Exclusive Move", "?", true)
   .addField("Bonuses", "3 hour Lures, 3x Catch Stardust")
 
-  .addField("Local Meetup", "Meet with other local Trainers and gain new Friends by attending the Carrollton Pokemon GO Meet and Greet at the Art Center (Floral Bench Gym) from 12-1:30pm. For directions you can use the command `!oak artcenter`.")
+  .addField("Local Meetup", "Meet with other local Trainers and gain new Friends by attending the Carrollton Pokemon GO Meet and Greet at the Art Center (Floral Bench Gym) from 12-1:30pm.")
   .addField("Helpful Commands", "`!oak artcenter` or `!oak eeveetrick`")
 
   .setTimestamp()
