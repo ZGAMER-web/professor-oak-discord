@@ -6,7 +6,7 @@ const embed = new Discord.RichEmbed()
   
   .setColor(0x00AE86)
   .setDescription("For just a few hours each month, you can encounter a special Pokémon in the wild. During these hours, there's a chance to learn a previously unavailable move for that Pokémon or its evolution, as well as earn some Community Day bonuses. Celebrate what it means to be a part of the Pokémon GO community and make new friends along the way!")
-  .setFooter("© Professor Oak", "https://github.com/benjaminatl/discord-professor-oak/blob/master/images/oak1.jpeg?raw=true")
+  .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
   .setThumbnail("https://storage.googleapis.com/pokemongolive/communityday/PKMN_Community-Day-logo2.png")
   .setImage("https://lh3.googleusercontent.com/0JcW5HtqxiDTCk1YBiVEsfHKZi3DYhEtjCnABgPP8qVjoY1MggCVlxSnBc0_iifOvD4ME39b2II2Mp3fOp8E=s0-v0-rj")
   
