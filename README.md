@@ -125,7 +125,7 @@ A Discord Bot for Pokemon GO. Quick and easy commands help Trainers get the info
 &bull; UWG Bench & Plaque<br>
 <code>!oak uwgbenchandplaque</code> or <code>!oak benchandplaque</code><br><br>
 &bull; UWG Bonner House<br>
-<code>!oak </code><br><br>
+<code>!oak uwgbonnerhouse</code> or <code>!oak bonnerhouse</code><br><br>
 &bull; Veterans Magnolia Memorial<br>
 <code>!oak veteransmagnoliamemorial</code> or <code>!oak vets</code><br><br>
 &bull; Welcome Hill Baptist Church<br>
