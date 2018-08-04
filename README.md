@@ -119,7 +119,7 @@ A Discord Bot for Pokemon GO. Quick and easy commands help Trainers get the info
 &bull; Trojan Stadium<br>
 <code>!oak trojanstadium</code><br><br>
 &bull; Universal Faith Deliverance Church<br>
-<code>!oak universalfaithdeliverence</code> or <code>!oak universalfaithdeliverencechurch</code> or <code>!oak cemeterychurch</code><br><br>
+<code>!oak universalfaithdeliverence</code> or <code>!oak universalfaith</code> or <code>!oak universalfaithdeliverencechurch</code> or <code>!oak cemeterychurch</code><br><br>
 &bull; Unkown Confederate Graves<br>
 <code>!oak unkownconfederategraves</code><br><br>
 &bull; UWG Bench & Plaque<br>
