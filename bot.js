@@ -7,7 +7,7 @@ const fs = require("fs");
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  client.user.setGame("!oak v.2.0.1");
+  client.user.setGame("!oak v.2.0.2");
   
   // This is the best way to define args. Trust me.
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
