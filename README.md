@@ -131,7 +131,7 @@ A Discord Bot for Pokemon GO. Quick and easy commands help Trainers get the info
 &bull; Welcome Hill Baptist Church<br>
 <code>!oak welcomehillbaptistchurch</code> or <code>!oak welcomehill</code> or <code>!oak lofts</code><br><br>
 &bull; West Georgia Tech<br>
-<code>!oak westgeorgiatech</code><br><br>
+<code>!oak westgeorgiatech</code> or <code>!oak westtech</code> or <code>!oak tech</code><br><br>
 &bull; Wolf Plaza<br>
 <code>!oak wolfplaza</code><br><br>
 &bull; World Of Life Church<br>
