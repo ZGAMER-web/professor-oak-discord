@@ -111,7 +111,7 @@ A Discord Bot for Pokemon GO. Quick and easy commands help Trainers get the info
 &bull; Tanner Medical Center Med Library<br>
 <code>!oak tannermedicalcentermedlibrary</code> or <code>!oak tanner</code><br><br>
 &bull; The Croft Street Bridge<br>
-<code>!oak thecroftstreetbridge</code><br><br>
+<code>!oak thecroftstreetbridge</code> or <code>!oak croftstreetbridge</code> or <code>!oak croft</code> or <code>!oak thecroft</code><br><br>
 &bull; The Observatory At The University Of West Georgia<br>
 <code>!oak theobservatoryattheuniversityofwestgeorgia</code> or <code>!oak observatory</code><br><br>
 &bull; The Other Flower Table<br>
