@@ -24,7 +24,7 @@ client.on("message", message => {
     let commandFile = require(`./directions/${command}.js`);
     commandFile.run(client, message, args);
   } catch(err) {
-    msg.channel.send("*Sorry, that location hasn't been added yet.*")
+    message.channel.send("*Sorry, that location hasn't been added yet.*")
   }
 });
 
