@@ -24,7 +24,7 @@ client.on("message", message => {
     let commandFile = require(`./directions/${command}.js`);
     commandFile.run(client, message, args);
   } catch(err) {
-    message.channel.send("*Sorry, that location hasn't been added yet.*")
+    message.channel.send("Sorry Trainer... For me to provide accuate research, please type `!oak` followed by a space, then the Gym or Pokestop name *with no spaces*.")
   }
 });
 
