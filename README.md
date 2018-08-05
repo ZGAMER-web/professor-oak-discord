@@ -38,8 +38,10 @@ A Discord Bot for Pokemon GO. Quick and easy commands help Trainers get the info
 <b><h2>Gym Directions</h2></b><br>
 &bull; Bankers Park<br>
 <code>!oak bankerspark</code> or <code>!oak bankers</code><br><br>
+
 &bull; Buffalo Creek Outdoor Education Center<br>
 <code>!oak buffalocreekoutdooreducation</code> or <code>!oak buffalocreek</code> or <code>!oak agcenter</code><br><br>
+
 &bull; Carrollton First Baptist<br>
 <code>!oak carrolltonfirstbaptist</code> or <code>!oak firstbaptist</code><br><br>
 &bull; Carrollton Giant Cross<br>
