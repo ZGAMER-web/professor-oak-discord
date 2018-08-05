@@ -7,7 +7,7 @@ const fs = require("fs");
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  client.user.setGame("!oak v.2.0.2");
+  client.user.setGame("!oak v.2.0.3");
   
   // This is the best way to define args. Trust me.
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
@@ -24,7 +24,7 @@ client.on("message", message => {
     let commandFile = require(`./directions/${command}.js`);
     commandFile.run(client, message, args);
   } catch(err) {
-    message.channel.send("Sorry Trainer... For me to provide accuate research, please type `!oak` followed by a space, then the Gym or Pokestop name *with no spaces*.")
+    message.channel.send("Sorry Trainer... For me to provide accuate research, please type `!oak` followed by a space, then the Gym or Pokestop name *with no spaces*. **Example:** `!oak eastcarroll`")
   }
 });
 
