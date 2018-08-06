@@ -7,7 +7,7 @@ const fs = require("fs");
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  client.user.setGame("!oak v.3.0.0");
+  client.user.setGame("!oak v.3.1.0");
   
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
