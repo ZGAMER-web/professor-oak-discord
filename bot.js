@@ -11,12 +11,6 @@ client.on("message", message => {
   
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  
-  const swearWords = ["darn", "shucks", "frak", "shite"];
-if( swearWords.some(word => message.content.includes(word)) ) {
-  message.reply("Oh no you said a bad word!!!");
-  // Or just do message.delete();
-}
 
   try {
     let commandFile = require(`./commands/${command}.js`);
