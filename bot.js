@@ -9,6 +9,12 @@ client.on("message", message => {
   if(message.content.indexOf(config.prefix) !== 0) return;
   client.user.setGame("!oak v.3.1.0");
   
+  const swearWords = ["darn", "shucks", "frak", "shite"];
+if( swearWords.some(word => message.content.includes(word)) ) {
+  message.reply("Oh no you said a bad word!!!");
+  // Or just do message.delete();
+}
+  
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
