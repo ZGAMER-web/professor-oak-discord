@@ -1,5 +1,5 @@
 <b><h1>Professor Oak</h1></b>
-<h6>version 3.0.0<h6>
+<h6>version 3.0.0</h6>
 A Discord Bot for Pokemon GO for Gym and Pokestop Directions. Created by MrRecordHolder.
 <br><br>
 <b><h2>Commands</h2></b><br>
