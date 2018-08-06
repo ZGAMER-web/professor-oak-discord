@@ -13,10 +13,10 @@ client.on("message", message => {
   const command = args.shift().toLowerCase();
   
   try {
-    let commandFile = require(`./directions/${command}.js`);
+    let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch(err) {
-    message.channel.send("Sorry Trainer... For me to provide accurate research, type `!oak` followed by a space, then the Gym or Pokestop name *with no spaces*. Type `!oak help` for help.")
+    message.channel.send("Sorry Trainer... For me to provide accurate research, type `!oak` followed by a space, then the Gym or Pokestop name *with no spaces*. For help, reply back with `!oak help`.")
   }
 });
 
