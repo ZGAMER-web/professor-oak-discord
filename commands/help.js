@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
     description: "Hello Trainer! To get directions, use `!oak` followed by the name of a Gym *(one word, no spaces)*. You can use the full name, short name or nickname. The word *uwg* and *church* can be removed from any Gym name. I have listed a few examples below along with a support command.",
     fields: [{
         name: "!oak floralbench",
-        value: "Directions to the Gym, Floral Bench"
+        value: "Directions to the Gym, Floral Bench."
       },
       {
         name: "!oak welcomehill",
