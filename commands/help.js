@@ -19,7 +19,6 @@ exports.run = (client, message, args) => {
         value: "I will let the Ace Trainer's know you need further help or that there is a issue."
       },
     ],
-    timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
       text: "© Professor Oak"
