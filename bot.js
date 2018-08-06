@@ -3,12 +3,11 @@ const client = new Discord.Client();
 const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
-const version = config.version
 
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  client.user.setGame(config.version);
+  client.user.setGame("!oak v.3.1.0");
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
