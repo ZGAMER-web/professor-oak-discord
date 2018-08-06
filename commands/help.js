@@ -14,8 +14,12 @@ exports.run = (client, message, args) => {
         name: "!oak welcomehill",
         value: "Directions to the Gym, Welcome Hill Baptist Church."
       },
+      { 
+      name: "!oak observatory",
+      value: "Directions to the Gym, The Observatory At The University Of West Georgia."
+      },
       {
-        name: "!oak acetrainer",
+        name: "!oak support",
         value: "I will let the Ace Trainer's know you need further help or that there is a issue."
       },
     ],

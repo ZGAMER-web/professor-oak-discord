@@ -16,7 +16,7 @@ client.on("message", message => {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch(err) {
-    message.channel.send("Sorry Trainer... For me to provide accurate research, type `!oak` followed by a space, then the Gym or Pokestop name *with no spaces*. For help, reply back with `!oak help`.")
+    message.channel.send("Sorry Trainer... I didn't find that location. Be sure to check your spelling and try again. For help, reply back with `!oak help`.")
   }
 });
 
