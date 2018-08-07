@@ -1,8 +1,6 @@
 module.exports.run = (client, message, args) => {
     const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
-
-  const location = "East Carroll"
   
     .setTitle(location)
     
@@ -22,6 +20,8 @@ module.exports.run = (client, message, args) => {
     .addField("Helpful Commands", "`!oak artcenter` or `!oak eeveetrick`")
   
     .setTimestamp()
+
+    const location = "East Carroll";
   
     message.channel.send({embed});
   }
