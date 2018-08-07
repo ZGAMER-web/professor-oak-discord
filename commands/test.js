@@ -1,5 +1,5 @@
 exports.run = (client, message, args) => {
-    import * as myConstClass from '/data/gyms';
+    import ConstantsList from './data/gyms';
     
     const gym = "**East Carroll**"; // gym name
     const location = "Carrollton"; // city
