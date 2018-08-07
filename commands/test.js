@@ -1,4 +1,5 @@
 exports.run = (client, message, args) => {
+    message.delete(5000)
     
     const greeting = "Hello Trainer! Based on my Gym research,"; // default message to start the reply
     const gym = "**East Carroll**"; // gym name
@@ -10,5 +11,5 @@ exports.run = (client, message, args) => {
     const gymresponse = greeting + " " + gym + " is located in " + location + ", access is " + access + " and " + exraid + " Ex Raid eligable. " + map;
 
     message.channel.send(gymresponse).catch(console.error);
-    message.channel.delete(5000)
+    
 } 
