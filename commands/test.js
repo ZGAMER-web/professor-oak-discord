@@ -1,12 +1,11 @@
 exports.run = (client, message, args) => {
-const GYM_NAME = config.GYM_1
     
     // DEFAULT MESSAGE, DO NOT CHANGE!
     const GYM_GREETING = "Hello Trainer! According to my research,"
     
     
     // ------- EDIT THE BELOW FIELDS ONLY
-    
+    const GYM_NAME = "**East Carroll**";
     const GYM_LOCATION = "Carrollton Georgia"; // "City State"
     const EX_RAID = "it is"; // "it is" or "it is not"
     const GYM_ACCESS = "easy with free parking"; // "easy" "easy with free parking" "diffucult" "diffucult with paid parking"
