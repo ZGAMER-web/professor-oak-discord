@@ -19,6 +19,14 @@ client.on("message", message => {
     message.channel.send("Sorry Trainer, I couldn't find that. Check your spelling and try again. For help, reply back with `!oak help`.")
   }
   
+  const responseObject = {
+  "hello": "Hello Trainer!",
+};
+  
+  if(responseObject[message.content]) {
+    message.channel.send(responseObject[message.content]);
+  }
+  
 });
 
 client.login(process.env.BOT_TOKEN);
