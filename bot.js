@@ -20,7 +20,7 @@ client.on("message", message => {
   }
   
   const responseObject = {
-  "hello": "Hello Trainer!",
+  "hello": "Hello Trainer!"
 };
   
   if(responseObject[message.content]) {
