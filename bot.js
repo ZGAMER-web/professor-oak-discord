@@ -23,10 +23,6 @@ client.on("message", message => {
   
 });
 
-const responseObject = {
-  "hello": "Hello, Trainer!",
-  "lol": "Good one, Trainer!"
-};
 
 client.on("message", (message) => {
   if(responseObject[message.content]) {
