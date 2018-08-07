@@ -8,5 +8,5 @@ exports.run = (client, message, args) => {
     const gymresponse = greeting + " the " + location + " called " + locname + ". Based on my research, I've found that " + "access is " + access;
 
     message.channel.send(gymresponse).catch(console.error);
-    message.channel.delete(5000)
+    message.delete(5000)
 } 
