@@ -12,7 +12,7 @@ client.on("message", message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
-  try {
+  if {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch(err) {
