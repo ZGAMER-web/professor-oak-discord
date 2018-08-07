@@ -1,0 +1,4 @@
+const responseObject = {
+  "hello": "Hello, Trainer!",
+  "lol": "Good one, Trainer!"
+};
