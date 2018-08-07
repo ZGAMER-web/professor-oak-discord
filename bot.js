@@ -1,9 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-const data = require("./data.json");
 const prefix = config.prefix
-const responseOnject = data.responseObject
 const fs = require("fs");
 
 
@@ -23,6 +21,8 @@ client.on("message", message => {
   }
   
 });
+
+import responseObject from './data';
 
 client.on("message", (message) => {
   if(responseObject[message.content]) {
