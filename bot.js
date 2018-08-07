@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
-const responseObject = require('./data.json')
+const responderObject = require('./data/responder.json')
 
 
 client.on("message", message => {
@@ -25,8 +25,8 @@ client.on("message", message => {
 
 
 client.on("message", (message) => {
-  if(responseObject[message.content]) {
-    message.channel.send(responseObject[message.content]);
+  if(responderObject[message.content]) {
+    message.channel.send(responderObject[message.content]);
   }
 });
 
