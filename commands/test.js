@@ -1,4 +1,4 @@
-const GYM_GREETING = require('../data/greeting.json')
+const GYM_GREETING = require('.//data/greeting.json')
 
 exports.run = (client, message, args) => {
     
