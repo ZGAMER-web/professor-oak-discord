@@ -5,7 +5,7 @@ exports.run = (client, message, args) => {
     const locname = "**East Carroll**"; // gym or pokestop name
     const access = "easy"; // easy, diffucult, etc..
 
-    const gymresponse = greeting + " the " + location + " called " + locname + ". Based on my research, I've found that access is " + access;
+    const gymresponse = greeting + " the " + loc + " called " + locname + ". Based on my research, I've found that access is " + access;
 
     message.channel.send(gymresponse).catch(console.error);
     message.delete(5000)
