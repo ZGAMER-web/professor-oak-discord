@@ -1,4 +1,0 @@
-const responseObject = {
-  "hello": "Ayy, lmao!",
-  "lol": "lmfao"
-};
