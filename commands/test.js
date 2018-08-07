@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
     const notes = ""; // optional notes about the gym
     const map = "https://goo.gl/maps/YuNoQopXHqJ2"; // google map link
 
-    const gymresponse = GYM_GREETING + " " + gym + " is located in " + location + ", access is " + access + " and " + exraid + " Ex Raid eligable. " + notes + " " + map;
+    const gymresponse = ConstantsList.GYM_GREETING + " " + gym + " is located in " + location + ", access is " + access + " and " + exraid + " Ex Raid eligable. " + notes + " " + map;
 
     message.channel.send(gymresponse).catch(console.error);
     message.delete()
