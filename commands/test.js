@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
     
     // ------- EDIT THE BELOW FIELDS ONLY
     const GYM_NAME = "**East Carroll**";
-    const GYM_LOCATION = "Carrollton, Georgia"; // "City, State"
+    const GYM_LOCATION = "Carrollton Georgia"; // "City State"
     const EX_RAID = "it is"; // "it is" or "it is not"
     const GYM_ACCESS = "easy"; // "easy" "easy with free parking" "diffucult" "diffucult with paid parking"
     const GYM_NOTES = ""; // optional notes about the gym
