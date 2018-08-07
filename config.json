@@ -1,7 +1,3 @@
 {
   "prefix": "!oak "
 }
-
-  const responseObject = {
-    "hello": "Hello Trainer!"
-};
