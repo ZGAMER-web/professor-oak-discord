@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
 const prefix = config.prefix
+const data = require("./bot.json");
 const responseOnject = data.responseObject
 const fs = require("fs");
 
