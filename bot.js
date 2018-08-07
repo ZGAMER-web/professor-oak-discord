@@ -15,14 +15,8 @@ client.on("message", message => {
   try {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
-  } catch (err) {
-    console.error(err);
-  } 
-  try {
-    let commandFile = require(`./commands-old/${command}.js`);
-    commandFile.run(client, message, args);
-  } catch (err) {
-    console.error(err);
+  } catch(err) {
+    message.channel.send("Sorry Trainer ${user}, check your spelling and try again. For help, reply back with `!oak help`.")
   }
   
 });
