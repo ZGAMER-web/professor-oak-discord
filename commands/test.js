@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
     
-    const GYM_GREETING = require('/data/greeting.json');
+    const GYM_GREETING = require('../../data/greeting.json');
     
     // ------- EDIT THE BELOW FIELDS ONLY
     const GYM_NAME = "**East Carroll**";
