@@ -1,8 +1,6 @@
+const GYM_GREETING = require('./data/greeting.json')
+
 exports.run = (client, message, args) => {
-    
-    // DEFAULT MESSAGE, DO NOT CHANGE!
-    const GYM_GREETING = "Hello Trainer! According to my research,"
-    
     
     // ------- EDIT THE BELOW FIELDS ONLY
     const GYM_NAME = "**East Carroll**";
