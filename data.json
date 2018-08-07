@@ -1,4 +1,4 @@
-export const responseObject = {
+const responseObject = {
   "hello": "Ayy, lmao!",
   "lol": "lmfao"
 };
