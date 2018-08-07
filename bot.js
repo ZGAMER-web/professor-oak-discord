@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
+const responseObject = require('./data.json')
 
 
 client.on("message", message => {
