@@ -1,3 +1,5 @@
-  const responseObject = {
-    "hello": "Hello Trainer!",
+const responseObject = {
+  "ayy": "Ayy, lmao!",
+  "wat": "Say what?",
+  "lol": "roflmaotntpmp"
 };
