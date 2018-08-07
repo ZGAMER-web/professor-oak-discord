@@ -1,14 +1,24 @@
 exports.run = (client, message, args) => {
     
+    // DEFAULT MESSAGE, DO NOT CHANGE!
     const GYM_GREETING = "Hello Trainer! According to my research,"
-    const gym = "**East Carroll**"; // gym name
-    const location = "Carrollton"; // city
-    const exraid = "it is"; // it is or it isn't
-    const access = "easy"; // easy, diffucult, etc..
-    const notes = ""; // optional notes about the gym
-    const map = "https://goo.gl/maps/YuNoQopXHqJ2"; // google map link
-
-    const gymresponse = GYM_GREETING + " " + gym + " is a Gym located in " + location + ", access is " + access + " and " + exraid + " Ex Raid eligable. " + notes + " " + map;
+    
+    // ------- EDIT THE BELOW FIELDS ONLY
+    const GYM_NAME = "**East Carroll**";
+    
+    const GYM_LOCATION = "Carrollton, Georgia"; // "City, State"
+    
+    const EX_RAID = "it is"; // "it is" or "it isn't"
+    
+    const GYM_ACCESS = "easy"; // "easy" "easy with free parking" "diffucult" "diffucult with paid parking"
+    
+    const GYM_NOTES = ""; // optional notes about the gym
+    
+    const MAP_LINK = "https://goo.gl/maps/YuNoQopXHqJ2"; // google map link
+    // ------- EDIT THE ABOVE FIELDS ONLY
+    
+    // FULL RESPONSE, DO NOT CHANGE!
+    const gymresponse = GYM_GREETING + " " + GYM_NAME + " is a Gym located in " + GYM_LOCATION + ", access is " + GYM_ACCESS + " and " + EX_RAID + " Ex Raid eligable. " + GYM_NOTES + " " + MAP_LINK;
 
     message.channel.send(gymresponse).catch(console.error);
     message.delete()
