@@ -18,5 +18,9 @@ exports.run = (client, message, args) => {
     const GYM_RESPONSE = GYM_GREETING + " " + GYM_NAME + " is a Gym located in " + GYM_LOCATION + ", access is " + GYM_ACCESS + " and " + EX_RAID + " Ex Raid eligable. " + GYM_NOTES + " " + MAP_LINK;
 
     message.channel.send(GYM_RESPONSE).catch(console.error);
-    message.delete()
+    message.reply('Invalid command')
+  .then(msg => {
+    msg.delete(10000)
+  })
+  .catch();
 } 
