@@ -23,13 +23,7 @@ client.on("message", message => {
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
-  } 
-  try {
-    let commandFile = require(`./commands-new/${command}.js`);
-    commandFile.run(client, message, args);
-  } catch (err) {
-    message.send("For help, reply back with `!oak help`");
-  } 
+  }
   
 });
 
