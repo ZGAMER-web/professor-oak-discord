@@ -22,7 +22,7 @@ client.on("message", message => {
   
 });
 
-import responseObject from './data';
+import const responseObject from './data';
 
 client.on("message", (message) => {
   if(responseObject[message.content]) {
