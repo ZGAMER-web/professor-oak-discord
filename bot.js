@@ -21,9 +21,7 @@ client.on("message", message => {
   
 });
 
-  const responseObject = {
-  "hello": "Hello Trainer!"
-};
+
 
 client.on("message", (message) => {
   if(responseObject[message.content]) {
