@@ -2,7 +2,9 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
 const prefix = config.prefix
+const responseOnject = data.responseObject
 const fs = require("fs");
+
 
 client.on("message", message => {
   if (message.author.bot) return;
@@ -20,8 +22,6 @@ client.on("message", message => {
   }
   
 });
-
-const responseObject = data.responseObject
 
 client.on("message", (message) => {
   if(responseObject[message.content]) {
