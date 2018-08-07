@@ -21,7 +21,7 @@ client.on("message", message => {
   
 });
 
-
+const responseObject = data.responseObject
 
 client.on("message", (message) => {
   if(responseObject[message.content]) {
