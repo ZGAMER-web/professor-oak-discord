@@ -7,8 +7,8 @@ exports.run = (client, message, args) => {
     const access = "easy"; // easy, diffucult, etc..
     const map = "https://goo.gl/maps/YuNoQopXHqJ2"; // google map link
 
-    const gymresponse = greeting + " " + gym + " is located in " + location + " ,access is " + access + " and " + exraid + " Ex Raid eligable. " + map;
+    const gymresponse = greeting + " " + gym + " is located in " + location + ", access is " + access + " and " + exraid + " Ex Raid eligable. " + map;
 
     message.channel.send(gymresponse).catch(console.error);
-    message.delete(5000)
+    message.channel.delete(5000)
 } 
