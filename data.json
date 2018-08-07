@@ -1,5 +1,6 @@
-const responseObject = {
-  "ayy": "Ayy, lmao!",
-  "wat": "Say what?",
-  "lol": "roflmaotntpmp"
+export const responseObject = {
+  "hello": "Ayy, lmao!",
+  "lol": "lmfao"
 };
+
+export const ACTION_INVALID = "This action is invalid!"
