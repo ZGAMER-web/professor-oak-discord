@@ -2,9 +2,8 @@ module.exports.run = (client, message, args) => {
     const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
 
-  const GYM_NAME = "East Carroll"
   
-    .setTitle({GYM_NAME})
+    .setTitle("East Carroll")
     
     .setColor(0x00AE86)
     .setDescription("Hello Trainer! Based on my research, I have found the following.")
