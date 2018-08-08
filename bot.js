@@ -26,8 +26,6 @@ try {
   try {
     let commandFile = require(`./pokestops/${command}.js`);
     commandFile.run(client, message, args);
-  } catch () {
-    console.error();
   }
   
 });
