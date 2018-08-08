@@ -22,9 +22,7 @@ try {
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No command found...");
-  }
-  else if
-    
+  }    
   try {
     let commandFile = require(`./pokestops/${command}.js`);
     commandFile.run(client, message, args);
