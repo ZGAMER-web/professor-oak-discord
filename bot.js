@@ -17,7 +17,7 @@ client.on("message", message => {
  
   //CHECK FOR COMMANDS
   try {
-    let commandFile = require(`./commands/${command}.js`,(`./pokestops/${command}.js`));
+    let commandFile = require(`..//..${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
