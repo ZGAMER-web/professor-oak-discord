@@ -10,7 +10,7 @@ const BOT_VERSION = = require('.data/bot.json')
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  client.user.setGame(BOT_VERSION);
+  client.user.setGame("!oak " + BOT_VERSION);
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
