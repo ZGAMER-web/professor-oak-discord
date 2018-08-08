@@ -16,7 +16,7 @@ client.on("message", message => {
   
   //CHECK FOR GYMS
   try {
-    let commandFile = require(`./gyms/${command}.js`);
+    let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
