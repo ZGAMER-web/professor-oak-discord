@@ -1,3 +1,4 @@
 {
-  "prefix": ["!oak " , "oak "]
+  "prefix": "!oak",
+  "prefix": "?oak "
 }
