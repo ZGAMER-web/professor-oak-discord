@@ -1,3 +1,21 @@
-exports.run = (client, message, args) => {
-    message.channel.send("Hello, Trainer. I see you need information on the gym **East Carroll**. My research shows: It is EX Raid eligable, access is easy, free parking, may reqire to get out of vehicle. https://goo.gl/maps/ZSCWZnXeKt32").catch(console.error);
-}
+module.exports.run = (client, message, args) => {
+    const Discord = require("discord.js");
+  const embed = new Discord.RichEmbed()
+  
+    .setTitle("East Carroll")
+    
+    .setColor(0x00AE86)
+    .setDescription("[CLICK HERE FOR DIRECTIONS](https://goo.gl/maps/q8qup3vJkrt)")
+    .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
+
+    .setThumbnail("https://lh3.ggpht.com/TezUfbTmNcOZheSzLcq2Cfen7TSHCHAQKMS0nO0OYRh1X4Zzljer9QuPOouW5TAKPiPnI65WsCWcPQR5JreN")
+    
+    .addField("**Location**", "Carrollton, GA")
+    .addField("**Access**", "Easy, Free Parking")
+    .addField("**Ex Raid Eligable**", "Yes")
+    .addField("**Commands**", "`eastcarroll` or `skatepark`")
+
+    .setTimestamp()
+  
+    message.channel.send({embed});
+  }
