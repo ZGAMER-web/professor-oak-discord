@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
-const responderObject = require('./data/responder.json')
+const responderObject = require('./data/responder.json');
 const BOT_VERSION = require('.data/bot.json')
 
 // LOADS & RUNS THE COMMAND FOLDER
