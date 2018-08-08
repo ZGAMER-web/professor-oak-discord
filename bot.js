@@ -4,6 +4,7 @@ const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
 const responderObject = require('./data/responder.json')
+const COMMAND_CONTROLS = require('./data/commands.json')
 
 // LOADS & RUNS THE COMMAND FOLDER
 client.on("message", message => {
@@ -18,7 +19,7 @@ client.on("message", message => {
   //CHECK FOR COMMANDS
   
   try {
-    let commandFile = require('./**/${command}.js');
+    let commandFile = require('./{COMMAND_CONTROLS}/${command}.js');
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
