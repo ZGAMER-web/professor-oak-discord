@@ -1,17 +1,17 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-const prefix = config.prefix
 const fs = require("fs");
 const responderObject = require('./data/responder.json');
 
 // LOADS & RUNS THE COMMAND FOLDER
-client.on("message", message => {
-  if (message.author.bot) return;
-  if(message.content.indexOf(config.prefix) !== 0) return;
+client.on('message', async message => {
+  const prefixes = ['!', '\\?', '\\/', `<@!?${client.user.id}> `];
+  const prefixRegex = new RegExp(`^(${prefixes.join('|')})`);
+  const prefix = message.content.match(prefixRegex);
   client.user.setGame("!oak v.3.1.2");
    
-  const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+  const args = message.content.slice(prefixes.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
  
