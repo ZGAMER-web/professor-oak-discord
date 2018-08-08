@@ -13,13 +13,30 @@ client.on("message", message => {
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
+  
+  //CHECK FOR GYMS
+  try {
+    let commandFile = require(`./gyms/${command}.js`);
+    commandFile.run(client, message, args);
+  } catch (err) {
+    console.error(err);
+  } 
+  
+  // CHECK FOR POKESTOPS
+  try {
+    let commandFile = require(`./pokestops/${command}.js`);
+    commandFile.run(client, message, args);
+  } catch (err) {
+    console.error(err);
+  } 
+  
+  //CHECK FOR COMMANDS
   try {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
-  } catch(err) {
-    message.channel.send("Sorry Trainer, I couldn't find that. Check your spelling and try again. For help, reply back with `!oak help`.")
-  }
+  } catch (err) {
+    console.error(err);
+  } 
   
 });
 
