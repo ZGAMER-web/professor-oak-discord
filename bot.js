@@ -17,19 +17,18 @@ client.on("message", message => {
  
   //CHECK FOR COMMANDS
   
-  try {
-    let commandFile = require('./commands/${command}.js');
+try {
+    let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
   } 
-  
   try {
-    let commandFile = require('./pokestops/${command}.js');
+    let commandFile = require(`./pokestops/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
-  } 
+  }
   
 });
 
