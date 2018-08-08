@@ -5,7 +5,7 @@ module.exports.run = (client, message, args) => {
     .setTitle("First Baptist Church")
     
     .setColor(0x00AE86)
-    .setDescription("[CLICK HERE FOR DIRECTIONS](https://goo.gl/maps/eN2MEbAgpRs)")
+    .setDescription("[CLICK HERE FOR DIRECTIONS](https://goo.gl/maps/SePom2TEhTL2)")
     .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
 
     .setThumbnail("https://lh3.googleusercontent.com/EVG9OwVHqpGzkItB-6n0NHhPHkBHO11InosVm7HSZILeIKMcAQlh1VKlAm0YOyFDnd1wviuTW1dwKA3wslRpyg")
