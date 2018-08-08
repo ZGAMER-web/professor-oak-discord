@@ -4,7 +4,6 @@ const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
 const responderObject = require('./data/responder.json')
-const COMMAND_CONTROLS = require('./data/commands.json')
 
 // LOADS & RUNS THE COMMAND FOLDER
 client.on("message", message => {
