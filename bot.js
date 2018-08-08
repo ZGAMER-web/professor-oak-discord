@@ -21,13 +21,15 @@ try {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
-    console.error(err);
-  } 
+    console.error("No command found...");
+  }
+  else if
+    
   try {
     let commandFile = require(`./pokestops/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
-    console.error("Command was not a Pokestop");
+    console.error("No Pokestop found...");
   } 
 });
 
