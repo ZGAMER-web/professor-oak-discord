@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-const prefix = ['!oak ', '<@471392870591627264> '];
+const prefix = ['!oak ', 'oak ', '<@471392870591627264> '];
 const fs = require("fs");
 const responderObject = require('./data/responder.json');
 
