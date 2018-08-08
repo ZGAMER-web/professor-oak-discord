@@ -10,9 +10,9 @@ module.exports.run = (client, message, args) => {
 
     .setThumbnail("https://lh3.ggpht.com/TezUfbTmNcOZheSzLcq2Cfen7TSHCHAQKMS0nO0OYRh1X4Zzljer9QuPOouW5TAKPiPnI65WsCWcPQR5JreN")
     
-    .addField("Location", "Carrollton, GA", true)
-    .addField("Access", "Easy, Free Parking", true)
-    .addField("Ex Raid Eligable", "Yes", true)
+    .addField("**Location**", "Carrollton, GA", true)
+    .addField("**Access**", "Easy, Free Parking", true)
+    .addField("**Ex Raid Eligable**", "Yes", true)
 
     .setTimestamp()
   
