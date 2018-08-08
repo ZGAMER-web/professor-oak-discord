@@ -4,7 +4,7 @@ module.exports.run = (client, message, args) => {
 
   const GYM_NAME = "East Carroll"
   
-    .setTitle(GYM_NAME)
+    .setTitle({GYM_NAME})
     
     .setColor(0x00AE86)
     .setDescription("Hello Trainer! Based on my research, I have found the following.")
