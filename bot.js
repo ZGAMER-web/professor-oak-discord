@@ -7,8 +7,6 @@ const responderObject = require('./data/responder.json');
 
 // LOADS & RUNS THE COMMAND FOLDER
 client.on("message", message => {
-    const prefixMention = new RegExp(`^<@!?${client.user.id}> `);
-    const prefix = message.content.match(prefixMention) ? message.content.match(prefixMention)[0] : '!';
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
   client.user.setGame("!oak v.3.1.2");
