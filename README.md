@@ -1,5 +1,5 @@
 <b><h1>Professor Oak</h1></b>
-<h6>version 3.1.1</h6>
+<h6>version 3.1.3</h6>
 A Discord Bot for Pokemon GO. Created by MrRecordHolder.
 <br><br>
 <b><h2>Commands</h2></b><br>
