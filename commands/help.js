@@ -1,3 +1,4 @@
+exports.run = (client, message, args) => {
 message.channel.send('Hello, Trainer! What do you need help with? You can respond with single words as shown below... \n **directions** - Learn how to get directions to Gyms and Pokestops.')
 .then(() => {
   message.channel.awaitMessages(response => response.content === 'directions', {
