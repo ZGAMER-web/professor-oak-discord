@@ -13,7 +13,7 @@ module.exports.run = (client, message, args) => {
     
     .addField("**Location**", "Carrollton, GA")
     .addField("**Access**", "Easy")
-    .addField("**Nested**", "No")
+    .addField("**Nested**", "Yes")
     .addField("**Commands**", "`eastcarrolltoncomplex`") // COMMAND NAME INSIDE ``
 
     .setTimestamp()
