@@ -4,7 +4,6 @@ const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
 const responderObject = require('./data/responder.json');
-const HELP_RESPONDER = require('./data/help_responder.json');
 
 // LOADS & RUNS THE COMMAND FOLDER
 client.on("message", message => {
@@ -42,9 +41,6 @@ try {
 client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
-  }
-  if(HELP_RESPONDER[message.content]) {
-    message.channel.send(HELP_RESPONDER[message.content]);
   }
 });
 
