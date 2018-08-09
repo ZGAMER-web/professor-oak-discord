@@ -7,8 +7,8 @@ module.exports.run = (client, message, args) => {
     .setColor(0x00AE86)
     .setDescription("Report Field Research tasks that you've picked up from Pokestops. See the chart below for reference. This channel is cleared daily. Happy exploring, Trainers.**")
     .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
-    .setThumbnail("https://storage.googleapis.com/pokemongolive/communityday/PKMN_Community-Day-logo2.png")
-    .setImage("https://lh3.googleusercontent.com/0JcW5HtqxiDTCk1YBiVEsfHKZi3DYhEtjCnABgPP8qVjoY1MggCVlxSnBc0_iifOvD4ME39b2II2Mp3fOp8E=s0-v0-rj")
+    .setThumbnail("https://vignette.wikia.nocookie.net/pokemongo/images/8/84/Mp-Icon_Research.png/revision/latest?cb=20180328113134")
+    .setImage("https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/charts/field-research-aug.png")
     
     message.channel.send({embed});
     message.delete();
