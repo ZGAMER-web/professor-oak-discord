@@ -9,8 +9,8 @@ const responderObject = require('./data/responder.json');
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  let OAK_VERSION = require('./data/oak.json')
-  client.user.setGame(OAK_VERSION);
+  var OAK_VERSION = require('./data/oak.json')
+  client.user.setGame('OAK_VERSION');
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
