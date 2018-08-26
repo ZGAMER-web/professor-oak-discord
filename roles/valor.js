@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
-    let role = message.guild.roles.find("name", "mystic");
-    let team_emoji = client.emojis.find("name", "mystic");
+    let role = message.guild.roles.find("name", "valor");
+    let team_emoji = client.emojis.find("name", "valor");
 
     let member = message.member;
     
