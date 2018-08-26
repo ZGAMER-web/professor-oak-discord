@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
     let role = message.guild.roles.find("name", "carrollton");
     
     let member = message.member;
-    let mystic_emoji = require('./data/emoji.json');
+    let professor_oak_emoji = require('./data/emoji.json');
     
     
     // Add the role!
