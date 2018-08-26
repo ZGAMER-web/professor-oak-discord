@@ -6,5 +6,5 @@ exports.run = (client, message, args) => {
     
     // Add the role!
     member.addRole(role).catch(console.error);
-    message.channel.send("You've been added to the **Carrollton** area, Trainer!");
+    message.channel.send("Trainer, you now have access to the **" + role + " **area.");
 };
