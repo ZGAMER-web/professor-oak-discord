@@ -6,9 +6,10 @@ exports.run = (client, message, args) => {
     
     // Add the role!
     member.addRole(role).catch(console.error);
-    message.channel.send("Trainer, you now have access to the **" + role + " **area.");
+    
 
     // Remove a role!
     member.removeRole(role).catch(console.error);
-    message.channel.send("Trainer, you no longer have access to the **" + role + " **area.");
+
+    message.channel.send("Trainer, I've updated your access to the **" + role + " **area.");
 };
