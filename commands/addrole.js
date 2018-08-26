@@ -1,5 +1,5 @@
-client.on('message', (message) => {
-    let role = message.guild.roles.find("name", "carrollton");
+exports.run = (client, message, args) => {
+        let role = message.guild.roles.find("name", "carrollton");
 
     // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
     let member = message.member;
@@ -9,4 +9,4 @@ client.on('message', (message) => {
     // Add the role!
     member.addRole(role).catch(console.error);
     message.channel.send("You've been added, Trainer!");
-});
+};
