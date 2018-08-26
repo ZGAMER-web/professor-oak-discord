@@ -4,6 +4,7 @@ const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
 const responderObject = require('./data/responder.json');
+const responderObject = require('./data/emoji.json');
 
 // LOADS & RUNS THE COMMAND FOLDER
 client.on("message", message => {
