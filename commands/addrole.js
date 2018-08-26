@@ -1,5 +1,6 @@
 exports.run = (client, message, args) => {
-        let role = message.guild.roles.find("name", "carrollton" or "temple");
+        let role = message.guild.roles.find("name", "carrollton");
+        let role = message.guild.roles.find("name", "temple");
 
     let member = message.member;
     
