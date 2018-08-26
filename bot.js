@@ -36,7 +36,7 @@ try {
     console.error("No Pokestop found...");
   }
   try {
-    let commandFile = require(`./commands/locations/${command}.js`);
+    let commandFile = require(`./locations/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No location found...");
