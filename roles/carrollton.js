@@ -7,5 +7,5 @@ exports.run = (client, message, args) => {
     
     member.removeRole(role).catch(console.error);
 
-    message.channel.send("Trainer, I've updated your access to the **" + role + " **area.");
+    message.channel.send(message.author.toString() + ", I've updated your access to the **Carrollton** area.");
 };
