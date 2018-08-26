@@ -7,5 +7,8 @@ exports.run = (client, message, args) => {
     
     member.removeRole(role).catch(console.error);
 
-    message.channel.send(message.author.toString() + ", I've updated your access to the **Carrollton** area.");
+    const response_area = require("./oak.json");
+    const area_prefix = oak.response_area
+
+    message.channel.send(message.author.toString() + area_prefix + ", I've updated your access to the **Carrollton** area.");
 };
