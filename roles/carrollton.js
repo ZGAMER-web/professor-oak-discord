@@ -1,10 +1,9 @@
-const team_emoji = require('./data/emoji.json');
-
-
 exports.run = (client, message, args) => {
     let role = message.guild.roles.find("name", "carrollton");
     
     let member = message.member;
+
+    const team_emoji = require('./data/emoji.json');
     let team_emoji = emoji.mystic_emoji
     
     // Add the role!
