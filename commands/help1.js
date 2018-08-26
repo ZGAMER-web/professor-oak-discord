@@ -10,6 +10,6 @@ message.channel.send('Hello, Trainer! What do you need help with? You can respon
       message.channel.send(`The collected message was: ${collected.first().content}`);
     })
     .catch(() => {
-      message.channel.send('Sorry Trainer, I have very busy. Let me know if you need help again by replying with `!oak help`.');
+      message.channel.send('Sorry Trainer, I am very busy. Let me know if you need help again by replying with `!oak help`.');
     });
-});
+});}
