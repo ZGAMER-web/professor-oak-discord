@@ -7,5 +7,5 @@ exports.run = (client, message, args) => {
     
     member.removeRole(role).catch(console.error);
 
-    message.channel.send(message.author.toString() + ", I've updated your access to the **Franklin** area.");
+    message.channel.send(message.author.toString() + ", I've turned the **Franklin** area on. You can now see the raids, quests and sightings channels for this area. To turn on notifications, go to the channel you want to turn on, click the channel name at the top, then select *notification settings*. To turn this area off, simply type **!oak franklinoff**.");
 };
