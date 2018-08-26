@@ -1,5 +1,5 @@
 client.on('message', (message) => {
-    let role = message.guild.roles.find("name", "Team Mystic");
+    let role = message.guild.roles.find("name", "carrollton");
 
     let member = message.members;
 
