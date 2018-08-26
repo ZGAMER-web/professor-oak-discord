@@ -36,10 +36,10 @@ try {
     console.error("No Pokestop found...");
   }
   try {
-    let commandFile = require(`./locations/${command}.js`);
+    let commandFile = require(`./roles/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
-    console.error("No location found...");
+    console.error("No role found...");
   }  
 });
 
