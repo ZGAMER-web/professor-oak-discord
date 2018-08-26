@@ -8,5 +8,5 @@ exports.run = (client, message, args) => {
     
     member.removeRole(role).catch(console.error);
 
-    message.channel.send("Trainer, I've updated your `" + role + "` " + team_emoji + "team access.");
+    message.channel.send("Trainer, I've updated your team access. "+ team_emoji");
 };
