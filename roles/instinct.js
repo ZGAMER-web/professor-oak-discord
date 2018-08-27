@@ -6,5 +6,5 @@ exports.run = (client, message, args) => {
     
     member.addRole(role).catch(console.error);
     
-    message.channel.send(message.author.toString() + ", You've joined **Team Instinct**" + team_emoji + ". You now have access to your team chat, which is gerat for taking gyms and earning extra ball bonuses during raids.");
+    message.channel.send(message.author.toString() + ", You've joined **Team Instinct**" + team_emoji + ". You now have access to your team chat, which is great for taking gyms and earning extra ball bonuses during raids.");
 };
