@@ -9,7 +9,7 @@ const responderObject = require('./data/responder.json');
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  client.user.setGame('!oak v.3.2.3');
+  client.user.setGame('!oak v.3.2.4');
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
@@ -53,12 +53,12 @@ client.on("message", (message) => {
 
 /// WELCOME NEW TRAINER
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483792183346987009').send(member.user + ', Welcome Trainer! My name is **Professor Oak**. I am a custom Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!oak** then a space, followed by a command.\n\n Are you ready to use your first command ' + member.user.username + '? Lets set your team using a command. Reply with one of the following team commands below. \n**!oak mystic**\n**!oak valor**\n**!oak instinct**\nI will set your team and grant you access to new channels to use.\n\n*For help, refer to the <#483420019854934016> channel or just ask another Trainer.*'); 
+  member.guild.channels.get('483420033473576961').send(member.user + ', Welcome Trainer! My name is **Professor Oak**. I am a custom Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!oak** then a space, followed by a command.\n\n Are you ready to use your first command ' + member.user.username + '? Lets set your team using a command. Reply with one of the following team commands **!oak mystic** or **!oak valor** or **!oak instinct**. I will set your team and grant you access to new channels.\n\n*For help, refer to the <#483420019854934016> channel or just ask another Trainer.*'); 
 });
 
 /// TRAINER HAS LEFT THE SEVER
 client.on('guildMemberRemove', member => {
-  member.guild.channels.get('483792183346987009').send('**' + member.user.username + '**, has left the server.');
+  member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, has left the server.');
   //
 });
 
