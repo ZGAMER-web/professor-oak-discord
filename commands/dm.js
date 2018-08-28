@@ -5,6 +5,5 @@ exports.run = (client, message, args) => {
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     message.delete().catch(O_o=>{}); 
     // And we get the bot to say the thing: 
-    const trainer = message.mentions.members.first();
-    message.trainer.send(sayMessage);
+    message.member.send(sayMessage);
 }
