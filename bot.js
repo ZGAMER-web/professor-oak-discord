@@ -53,7 +53,7 @@ client.on("message", (message) => {
 
 /// WELCOME NEW TRAINER
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483792183346987009').send(member.user.mention + ', Welcome Trainer! My name is **Professor Oak**. I am a Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!Oak** then a space, followed by a command. \n\n So first, lets set your team using a command. Reply with one of the following team commands. **!Oak mystic** or **!oak valor** or **!oak instinct**. I will set your team and grant you access to new channels to use.\n\n*For help refer to the <#483420019854934016> channel.*'); 
+  member.guild.channels.get('483792183346987009').send("<@" + member.user.username + '>, Welcome Trainer! My name is **Professor Oak**. I am a Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!Oak** then a space, followed by a command. \n\n So first, lets set your team using a command. Reply with one of the following team commands. **!Oak mystic** or **!oak valor** or **!oak instinct**. I will set your team and grant you access to new channels to use.\n\n*For help refer to the <#483420019854934016> channel.*'); 
 });
 
 /// TRAINER HAS LEFT THE SEVER
