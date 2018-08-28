@@ -51,15 +51,6 @@ client.on("message", (message) => {
 });
 
 
-/// WELCOME NEW TRAINER
-client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483792183346987009').send('**' + member.user.username + '**, Welcome Trainer! My name is *Professor Oak*, A Discord Bot. To interact with me, you must start each __new__ message with **!Oak** and then a space, followed by a command. \n\n So first, lets set your team! Reply with your team command only.\n*example* **!Oak mystic** or **!oak valor** or **!oak instinct**\n*For help refer to the <#483420019854934016> channel.*'); 
-});
 
-/// TRAINER HAS LEFT THE SEVER
-client.on('guildMemberRemove', member => {
-  member.guild.channels.get('483792183346987009').send('**' + member.user.username + '**, has left the server.');
-  //
-});
 
 client.login(process.env.BOT_TOKEN);
