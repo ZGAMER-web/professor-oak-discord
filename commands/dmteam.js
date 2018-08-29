@@ -1,3 +1,6 @@
+const oak = require("./oak.json");
+const oak_tutorial_team = oak.tutorial_team
+
 exports.run = (client, message, args) => {
 // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
@@ -5,5 +8,5 @@ exports.run = (client, message, args) => {
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     message.delete().catch(O_o=>{}); 
     // And we get the bot to say the thing: 
-    message.mentions.users.first().send("sayMessage")
+    message.mentions.users.first().send(oak_tutorial_team)
 }
