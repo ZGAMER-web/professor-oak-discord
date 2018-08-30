@@ -1,8 +1,6 @@
 module.exports.run = (client, message, args) => {
     const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
-    const location = require("../data/location.json");
-    const carrollton = location.location_carrollton
   
     .setTitle("East Carroll")
     
@@ -12,7 +10,7 @@ module.exports.run = (client, message, args) => {
 
     .setThumbnail("https://lh3.ggpht.com/TezUfbTmNcOZheSzLcq2Cfen7TSHCHAQKMS0nO0OYRh1X4Zzljer9QuPOouW5TAKPiPnI65WsCWcPQR5JreN")
     
-    .addField("**Location**", carrollton)
+    .addField("**Location**", "Carrollton, GA")
     .addField("**Access**", "Easy, Free Parking")
     .addField("**Ex Raid Eligable**", "Yes")
     .addField("**Commands**", "`eastcarroll` or `skatepark`")
