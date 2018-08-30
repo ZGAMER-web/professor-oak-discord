@@ -4,7 +4,7 @@ module.exports.run = (client, message, args) => {
   const gyms = require("../data/gyms.eastcarroll.json");
   const name = gyms.gym_name
 
-    embed.setTitle(name)
+  embed.setTitle(name)
     
     .setColor(0x00AE86)
     .setDescription("[CLICK HERE FOR DIRECTIONS](https://goo.gl/maps/q8qup3vJkrt)")
