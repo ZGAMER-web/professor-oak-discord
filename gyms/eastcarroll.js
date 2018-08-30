@@ -2,9 +2,9 @@ module.exports.run = (client, message, args) => {
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
   const gyms = require("../data/gyms.eastcarroll.json");
-  const gym_name = gyms.gym_name
+  const name = gyms.gym_name
 
-    .setTitle(gym_name)
+    .setTitle(name)
     
     .setColor(0x00AE86)
     .setDescription("[CLICK HERE FOR DIRECTIONS](https://goo.gl/maps/q8qup3vJkrt)")
