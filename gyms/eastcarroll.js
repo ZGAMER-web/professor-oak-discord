@@ -1,9 +1,9 @@
 module.exports.run = (client, message, args) => {
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
-  const gym_name = require("../data/gyms.eastcarroll.json");
+  const gyms = require("../data/gyms.eastcarroll.json");
   const gym_name = gyms.gym_name
-  
+
     .setTitle(gym_name)
     
     .setColor(0x00AE86)
