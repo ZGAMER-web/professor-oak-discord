@@ -4,12 +4,14 @@ const config = require("./config.json");
 const prefix = config.prefix
 const fs = require("fs");
 const responderObject = require('./data/responder.json');
+const oak = require("./data/oak.json");
+const version = oak.version
 
 // LOADS & RUNS THE COMMAND FOLDER
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  client.user.setGame('!oak v.3.2.7');
+  client.user.setGame(version);
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
