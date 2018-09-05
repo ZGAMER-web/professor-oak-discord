@@ -28,19 +28,19 @@ try {
   } catch (err) {
     console.error("No command found...");
   }    
-  else {
+  try {
     let commandFile = require(`./gyms/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No Gym found...");
   } 
-  else {
+  try {
     let commandFile = require(`./pokestops/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No Pokestop found...");
   }
-  else {
+  try {
     let commandFile = require(`./roles/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
