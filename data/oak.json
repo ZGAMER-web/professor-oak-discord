@@ -1,6 +1,6 @@
 {
     "name": "Professor Oak",
-    "version": "v.3.2.9",
+    "version": "v.3.3.0",
     "introduction": "My name is **Professor Oak**. I am a custom Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!oak** then a space, followed by a command.",
     "team_selection": "To set your team, reply with your team command **!oak mystic** or **!oak valor** or **!oak instinct**. I will set your team, change your name color and grant you access to new channels."
 }
