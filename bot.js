@@ -28,30 +28,24 @@ try {
   } catch (err) {
     console.error("No command found...");
   }    
-  try {
+  else {
     let commandFile = require(`./gyms/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No Gym found...");
   } 
-  try {
+  else {
     let commandFile = require(`./pokestops/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No Pokestop found...");
   }
-  try {
+  else {
     let commandFile = require(`./roles/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No role found...");
-  } 
-  try {
-    let commandFile = require(`./${command}/${command}.js`);
-    commandFile.run(client, message, args);
-  } catch (err) {
-    console.error("No role found...");
-  } 
+  }  
 });
 
 // RESPONDER, from data
