@@ -45,7 +45,13 @@ try {
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No role found...");
-  }  
+  } 
+  try {
+    let commandFile = require(`./${command}/${command}.js`);
+    commandFile.run(client, message, args);
+  } catch (err) {
+    console.error("No role found...");
+  } 
 });
 
 // RESPONDER, from data
