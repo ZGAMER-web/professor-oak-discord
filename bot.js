@@ -6,9 +6,6 @@ const fs = require("fs");
 const responderObject = require('./data/responder.json');
 const oak = require("./data/oak.json");
 const version = oak.version
-const oak_introduction = oak.introduction
-const server = require("./data/server.json")
-const oak_trainer_left = server.trainer_left
 
 // LOADS & RUNS THE COMMAND FOLDER
 client.on("message", message => {
@@ -57,11 +54,18 @@ client.on("message", (message) => {
 
 
 /// WELCOME NEW TRAINER
+const oak_welcome = oak.welcome
+const oak_introduction = oak.introduction
+const oak_set_team = oak.set_team
+const oak_help = oak.help
+
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_introduction + ' Lets set your team using a command. Reply with one of the following team commands **!oak mystic** or **!oak valor** or **!oak instinct**. I will set your team and grant you access to new channels.\n\n*For help, refer to the <#483420019854934016> channel or just ask another Trainer.*'); 
+  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + " " + oak_help); 
 });
 
 /// TRAINER HAS LEFT THE SEVER
+const oak_trainer_left = oak.trainer_left
+
 client.on('guildMemberRemove', member => {
   member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_left);
   //

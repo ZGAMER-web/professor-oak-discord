@@ -1,6 +1,9 @@
 {
     "name": "Professor Oak",
-    "version": "v.3.3.1",
+    "version": "v.3.3.2",
+    "welcome": "Welcome to the **Pokemon GO West GA** Discord Server.",
     "introduction": "My name is **Professor Oak**. I am a custom Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!oak** then a space, followed by a command.",
-    "team_selection": "To set your team, reply with your team command **!oak mystic** or **!oak valor** or **!oak instinct**. I will set your team, change your name color and grant you access to new channels."
+    "set_team": "Lets set your team using a command, Trainer! Reply with one of the following team commands in bold, be sure to spell it exactly as shown. **!oak mystic** or **!oak valor** or **!oak instinct**.",
+    "help": "For help, see the <#483420019854934016> channel or ask another Trainer in <#483421937641586699>.",
+    "trainer_left": "has left the server."
 }
