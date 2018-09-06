@@ -60,7 +60,7 @@ const oak_set_team = oak.set_team
 const oak_help = oak.help
 
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + " " + oak_help); 
+  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help); 
 });
 
 /// TRAINER HAS LEFT THE SEVER
