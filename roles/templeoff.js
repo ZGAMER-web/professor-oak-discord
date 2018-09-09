@@ -5,5 +5,5 @@ exports.run = (client, message, args) => {
     
     member.removeRole(role).catch(console.error);
 
-    message.channel.send(message.author.toString() + ", I've turned the **Temple** area off. You will no longer see or receive notifications for raids, quests or sightings channels in this area. To turn this area back on, simple type **!oak templeoff**.");
+    message.channel.send(message.author.toString() + ", I've turned the **Temple** area off. You will no longer see or receive notifications for raids, quests or sightings channels in this area. To turn this area back on, simple type **!oak temple**.");
 };
