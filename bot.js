@@ -58,7 +58,7 @@ const oak_welcome = oak.welcome
 const oak_introduction = oak.introduction
 const oak_set_team = oak.set_team
 const oak_help = oak.help
-const oak_trainer_left = oak.trainer_joined
+const oak_trainer_joined = oak.trainer_joined
 
 client.on('guildMemberAdd', member => {
   member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help); 
