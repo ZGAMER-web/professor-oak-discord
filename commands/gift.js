@@ -1,5 +1,5 @@
 module.exports.run = (client, message, args) => {
-    const Discord = require("discord.js");
+  const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
   
     .setTitle("Gifts in Pokemon GO")
@@ -10,8 +10,7 @@ module.exports.run = (client, message, args) => {
     .setImage("https://pokemongolive.com/img/posts/giftselect.png")
     .setThumbnail("https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/items/GiftBox.png")
     
-    .addField("Gifts Include", "Helpful items, 7KM eggs containing Alolan form of a Pokémon", true)
-    .addField("Helpful Commands", "`!oak friends`", true)
+    .addField("Gifts Include", "Helpful items, Stardust, 7K eggs", true)
 
     .setTimestamp()
   
