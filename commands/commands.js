@@ -10,7 +10,7 @@ module.exports.run = (client, message, args) => {
     .setThumbnail("https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/items/GiftBox.png")
     
     .addField("**Set Team**", "`!oak mystic` or `!oak valor` or `!oak instinct`", false)
-    .addField("Set Location", "`!oak bremen` or !oak carrollton` or `!oak franklin` or `oak temple` or `!oak villarica", false)
+    .addField("Set Location", "`!oak bremen` or `!oak carrollton` or `!oak franklin` or `oak temple` or `!oak villarica`", false)
 
     .setTimestamp()
   
