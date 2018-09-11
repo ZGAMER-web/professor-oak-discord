@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
     icon_url: client.user.avatarURL
   },
   title: "Kanto Region, Alolan Forms",
-  description: "Hello Trainer! I see that you are interested in knowing more about the Alolan form Pokemon orignally discovered from the Kanto region. Based on my research, I have discovered 18 Pokemon along with their types. **NEW UPDATE!** Alolan Pokemon can be hatched from 7KM eggs that can be obtained from receiving a special Gift from in-game Friends. You can use `!oak gifts` for more information.",
+  description: "Hello Trainer! I see that you are interested in knowing more about the Alolan form Pokemon orignally discovered from the Kanto region. Based on my research, I have discovered 18 Pokemon along with their types. Alolan Pokemon can be hatched from 7KM eggs that can be obtained from receiving a special Gift from in-game Friends.",
   fields: [{
       name: "Rattata, Raticate",
       value: "Dark, Normal"
