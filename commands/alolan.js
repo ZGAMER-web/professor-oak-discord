@@ -57,5 +57,5 @@ exports.run = (client, message, args) => {
 }
 });
 
-message.delete(5000).catch(O_o=>{}); 
+message.channel.bulkdelete(2).catch(O_o=>{}); 
 }
