@@ -54,9 +54,9 @@ exports.run = (client, message, args) => {
     icon_url: client.user.avatarURL,
     text: "© Professor Oak"
   }
-}
+}.then(sentMessage => {
+  sentMessage.delete(10000);
 });
 
 message.delete(5000).catch(O_o=>{}); 
-sentMessage.delete(10000).catch(O_o=>{}); 
 }
