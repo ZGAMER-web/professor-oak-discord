@@ -58,5 +58,5 @@ exports.run = (client, message, args) => {
 });
 
 message.delete(5000).catch(O_o=>{}); 
-message.embed.delete(10000).catch(O_o=>{}); 
+sentMessage.delete(10000).catch(O_o=>{}); 
 }
