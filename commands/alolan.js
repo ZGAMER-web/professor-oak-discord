@@ -1,4 +1,5 @@
 exports.run = (client, message, args) => {
+  message.delete(3000).catch(O_o=>{}); 
   message.channel.send({embed: {
   color: 3447003,
   author: {
