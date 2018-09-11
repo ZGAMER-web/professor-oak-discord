@@ -1,6 +1,3 @@
-const oak = require("./data/oak.json");
-const oak_introduction = oak.introduction
-
 exports.run = (client, message, args) => {
-    message.channel.send(oak_introduction).catch(console.error);
+    message.channel.send("My name is **Professor Oak**. I am a custom Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!oak** then a space, followed by a command above.").catch(console.error);
 }
