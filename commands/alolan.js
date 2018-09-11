@@ -55,8 +55,5 @@ exports.run = (client, message, args) => {
     text: "© Professor Oak"
   }
 }
-});.then(sentMessage => {
-  sentMessage.delete(10000);
-
-message.delete(5000).catch(O_o=>{}); 
+});
 }
