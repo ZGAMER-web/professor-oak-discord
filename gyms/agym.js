@@ -1,7 +1,7 @@
 module.exports.run = (client, message, args) => {
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
-  let oak = require("../data/oak.json");
+  let oak = require("/../data/oak.json");
   let version = oak.version
     
     .setColor(0x00AE86)
