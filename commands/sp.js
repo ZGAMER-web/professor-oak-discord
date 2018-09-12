@@ -1,8 +1,8 @@
 exports.run = (client, message, args) => {
 message.channel.send('What tag would you like to see? This will await will be cancelled in 30 seconds. It will finish when you provide a message that goes through the filter the first time.')
 .then(() => {
-    const oak = require("./data/oak.json");
-    const oak_response = oak.version
+    let oak = require("./data/oak.json");
+    let oak_response = oak.version
   message.channel.awaitMessages(response => response.content === oak_response, {
     max: 1,
     time: 30000,
