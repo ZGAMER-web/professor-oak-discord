@@ -1,9 +1,6 @@
 exports.run = (client, message, args) => {
-// makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-    // To get the "message" itself we join the `args` back into a string with spaces: 
     const sayMessage = args.join(" ");
-    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     message.delete().catch(O_o=>{}); 
-    // And we get the bot to say the thing: 
     client.channels.get("451467154944950282").send(sayMessage);
+    client.channels.get('483831639575887873').send('**' + member.user.username + '**' + " posted in <#451467154944950282> using my `!oak news` command.");
 }

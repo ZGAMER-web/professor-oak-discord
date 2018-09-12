@@ -15,7 +15,6 @@ module.exports.run = (client, message, args) => {
     .addField("Candy Bonues", "You need to be within 100 meters of a Friend to start a trade. You can earn a bonus depending on where the Pokemon in the trade were caught. The further apart their caught locations, *up to 100km*, the more candy you will earn.")
     .addField("CP & HP", "When you trade a Pokemon to a Friend, You can see the range of CP and HP that it could have. This range adjust's based on your Friendship level. After you complete the trade, the stats of both Pokemon will change randomly to reflect the new range.")
     
-
     .setTimestamp()  
     message.channel.send({embed});
   }
