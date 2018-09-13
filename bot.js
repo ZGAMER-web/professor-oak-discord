@@ -43,6 +43,8 @@ try {
   } catch (err) {
     console.error("No role found...");
   }  
+  else
+    message.channel("Sorry, Trainer no command found.");
 });
 
 // RESPONDER, from data
