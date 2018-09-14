@@ -1,9 +1,9 @@
 module.exports.run = (client, message, args) => {
-    const Discord = require("discord.js");
-    const embed = new Discord.RichEmbed()
-    
     const pokemon_data = require("../data/pokemon/articuno.json");
     const pokemon_name = pokemon_data.name
+    
+    const Discord = require("discord.js");
+    const embed = new Discord.RichEmbed()
       
       .setColor(0x00AE86)
       .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
