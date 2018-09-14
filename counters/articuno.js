@@ -2,6 +2,7 @@ module.exports.run = (client, message, args) => {
     const pokemon = require("../data/pokemon/articuno.json");
     const name = pokemon.name
     const dex = pokemon.dex
+    const trainers_needed = pokemon.trainers_needed
     const counter_01 = pokemon.counter_01
     const counter_01_moveset = pokemon.counter_01_moveset
     const counter_02 = pokemon.counter_02
@@ -15,7 +16,7 @@ module.exports.run = (client, message, args) => {
   
       .setTitle("#" + dex + " " + name)
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_144_00.png?raw=true")
-      .setDescription("Legendary")
+      .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainers with Pokemon of this strenght. Bringing an extra Trainer or two never hurts!")
       .addField(counter_01, counter_01_moveset)
       .addField(counter_02, counter_02_moveset)
   
