@@ -14,7 +14,7 @@ module.exports.run = (client, message, args) => {
       .setTitle("**" + pokemon_dex + " " + pokemon_name + "**")
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_144_00.png?raw=true")
       .setDescription("Recommended Trainers with counters at this level is 3, but you may need extra help.")
-      .addField('${pokemon_counter_01}', '${pokemon_counter_01_moveset}', false)
+      .addField("Tyranitar", "Smack Down / Stone Edge", false)
   
       .setTimestamp()
     
