@@ -5,13 +5,10 @@ module.exports.run = (client, message, args) => {
       .setColor(0x00AE86)
       .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
   
-      .setTitle("Articuno")
-      .setThumbnail("https://lh3.ggpht.com/TezUfbTmNcOZheSzLcq2Cfen7TSHCHAQKMS0nO0OYRh1X4Zzljer9QuPOouW5TAKPiPnI65WsCWcPQR5JreN")
-      .setDescription("[CLICK HERE FOR DIRECTIONS](https://goo.gl/maps/q8qup3vJkrt)")
-      .addField("**Location**", "Carrollton, GA")
-      .addField("**Access**", "Easy, Free Parking")
-      .addField("**Ex Raid Eligable**", "Yes")
-      .addField("**Commands**", "`eastcarroll` or `skatepark`")
+      .setTitle("#144 Articuno")
+      .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_144_00.png?raw=true")
+      .setDescription("Legendary")
+      .addField("**Attack**", "Carrollton, GA")
   
       .setTimestamp()
     
