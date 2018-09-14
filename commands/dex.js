@@ -4,6 +4,6 @@ exports.run = (client, message, args) => {
   try {
     commandFile.run(client, message, args)
   } catch (err) {
-    message.channel.send("No Pokemon found. Check your spelling and try again...");
+    console.error("No Pokemon found. Check your spelling and try again...");
   }
 };
