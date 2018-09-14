@@ -3,6 +3,7 @@ module.exports.run = (client, message, args) => {
     const name = pokemon.name
     const dex = pokemon.dex
     const counter_01 = pokemon.counter_01
+    const counter_01_moveset = pokemon.counter_01_moveset
     
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()
@@ -13,7 +14,7 @@ module.exports.run = (client, message, args) => {
       .setTitle("#" + dex + " " + name)
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_144_00.png?raw=true")
       .setDescription("Legendary")
-      .addField(counter_01, "Smack Down / Stone Edge")
+      .addField(counter_01, counter_01_moveset)
   
       .setTimestamp()
     
