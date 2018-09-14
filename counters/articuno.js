@@ -2,7 +2,7 @@ module.exports.run = (client, message, args) => {
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()
     
-    const pokemon_data = require("../data/pokemon/articuno");
+    const pokemon_data = require("../data/pokemon/articuno.json");
     const pokemon_name = pokemon_data.name
       
       .setColor(0x00AE86)
