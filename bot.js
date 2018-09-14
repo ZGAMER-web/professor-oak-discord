@@ -23,7 +23,25 @@ try {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
-    message.channel.send("No command found...");
+    console.error("No command found...");
+  }    
+  try {
+    let commandFile = require(`./gyms/${command}.js`);
+    commandFile.run(client, message, args);
+  } catch (err) {
+    console.error("No Gym found...");
+  } 
+  try {
+    let commandFile = require(`./pokestops/${command}.js`);
+    commandFile.run(client, message, args);
+  } catch (err) {
+    console.error("No Pokestop found...");
+  }
+  try {
+    let commandFile = require(`./roles/${command}.js`);
+    commandFile.run(client, message, args);
+  } catch (err) {
+    console.error("No role found...");
   }
 });
 
