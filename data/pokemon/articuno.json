@@ -1,6 +1,7 @@
 {
   "name": "Articuno",
   "dex": "144",
+  "trainers_needed": "3",
   "counter_01": "Tyranitar",
   "counter_01_moveset": "Smack Down / Stone Edge",
   "counter_02": "Omastar",
