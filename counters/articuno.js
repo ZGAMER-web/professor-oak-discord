@@ -15,7 +15,7 @@ module.exports.run = (client, message, args) => {
       .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
   
       .setTitle("#" + dex + " " + name)
-      .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_144_00.png?raw=true")
+      .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
       .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainers with Pokemon of this strenght. Bringing an extra Trainer or two never hurts!")
       .addField(counter_01, counter_01_moveset)
       .addField(counter_02, counter_02_moveset)
