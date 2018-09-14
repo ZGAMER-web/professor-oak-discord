@@ -1,5 +1,5 @@
 module.exports.run = (client, message, args) => {
-    const pokemon_data = require("../data/pokemon/articuno.json");
+    const pokemon_data = require("../data/pokemon/${command}.json");
     const pokemon_name = pokemon_data.name
     
     const Discord = require("discord.js");
