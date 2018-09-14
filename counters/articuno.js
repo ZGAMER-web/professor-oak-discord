@@ -1,6 +1,8 @@
 module.exports.run = (client, message, args) => {
-    const pokemon_data = require("../data/pokemon/articuno.json");
-    const pokemon_name = pokemon_data.name
+    const pokemon = require("../data/pokemon/articuno.json");
+    const name = pokemon.name
+    const dex = pokemon.dex
+    const counter_01 = pokemon.counter_01
     
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()
@@ -8,10 +10,10 @@ module.exports.run = (client, message, args) => {
       .setColor(0x00AE86)
       .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
   
-      .setTitle(pokemon_name)
+      .setTitle("#" + dex + " " + name)
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_144_00.png?raw=true")
       .setDescription("Legendary")
-      .addField("**Tyranitar**", "Smack Down / Stone Edge")
+      .addField(counter_01, "Smack Down / Stone Edge")
   
       .setTimestamp()
     
