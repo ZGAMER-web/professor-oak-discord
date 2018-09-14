@@ -1,4 +1,19 @@
 {
   "name": "Articuno",
-  "dex": "#144"
+  "dex": "#144",
+  "attack": "",
+  "defense": "",
+  "max_cp: "",
+  "level_20_cp": "",
+  "level_25_cp": "",
+  "counter_01": "Tyranitar",
+  "counter_01_moveset": "Smack Down / Stone Edge",
+  "counter_02": "",
+  "counter_02_moveset": "",
+  "counter_03": "",
+  "counter_03_moveset": "",
+  "counter_04": "",
+  "counter_04_moveset": "",
+  "counter_05": "",
+  "counter_05_moveset": "",
 }
