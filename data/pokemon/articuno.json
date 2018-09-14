@@ -1,5 +1,6 @@
 {
   "name": "Articuno",
   "dex": "144",
-  "counter_01": "Tyranitar"
+  "counter_01": "Tyranitar",
+  "counter_01_moveset": "Smack Down / Stone Edge"
 }
