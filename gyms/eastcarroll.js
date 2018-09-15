@@ -5,7 +5,7 @@ module.exports.run = (client, message, args) => {
   const map = gym.map
   const location = gym.location
 
-  const oak = require("../data/oak,json")
+  const oak = require("../data/oak.json")
   const oak_name = oak.name
     
   const Discord = require("discord.js");
