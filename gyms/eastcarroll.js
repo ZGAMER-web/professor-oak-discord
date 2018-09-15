@@ -1,9 +1,12 @@
 module.exports.run = (client, message, args) => {
   const gym = require("../data/gyms/eastcarroll.json");
-  const name = gym.name
-  const picture = gym.picture
-  const map = gym.map
-  const location = gym.location
+  const gym_name = gym.name
+  const gym_picture = gym.picture
+  const gym_map = gym.map
+  const gym_location = gym.location
+  const gym_access = gym.access
+  const gym_ex_raid = gym.ex_raid
+  const gym_commands = gyms.commands
 
   const oak = require("../data/oak.json")
   const oak_name = oak.name
@@ -16,13 +19,13 @@ module.exports.run = (client, message, args) => {
     .setColor(0x00AE86)
     .setFooter(oak_name + " " + oak_version, oak_avi)
 
-    .setTitle(name)
-    .setThumbnail(picture)
-    .setDescription("[CLICK HERE FOR DIRECTIONS](" + map + ")")
-    .addField("**Location**", location)
-    .addField("**Access**", "Easy, Free Parking")
-    .addField("**Ex Raid Eligable**", "Yes")
-    .addField("**Commands**", "`eastcarroll` or `skatepark`")
+    .setTitle(gym_name)
+    .setThumbnail(gym_picture)
+    .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
+    .addField("**Location**", gym_location)
+    .addField("**Access**", gym_access)
+    .addField("**Ex Raid Eligable**", gym_ex_raid)
+    .addField("**Commands**", gym_commands)
 
     .setTimestamp()
   
