@@ -5,5 +5,15 @@
   "counter_01": "Tyranitar",
   "counter_01_moveset": "Smack Down / Stone Edge",
   "counter_02": "Omastar",
-  "counter_02_moveset": "Rock Throw / Rock Slide"
+  "counter_02_moveset": "Rock Throw / Rock Slide (legacy move)",
+  "counter_03": "Golem & Alolan Golem",
+  "counter_03_moveset": "Rock Throw / Stone Edge",
+  "counter_04": "Entei",
+  "counter_04_moveset": "Fire Fang / Overheat",
+  "counter_05": "Raikou",
+  "counter_05_moveset": "Thunder Shock / Wild Charge",
+  "counter_06": "Flareon",
+  "counter_06_moveset": "Fire Spin Over Heat",
+  "counter_07": "Moltres",
+  "counter_07_moveset": "Fire Spin / Over Heat"
 }
