@@ -8,16 +8,16 @@ module.exports.run = (client, message, args) => {
   const ex_raid = gym.ex_raid
   const commands = gym.commands
 
-  const oak = require("../data/oak.json");
+  const gym = require("../data/oak.json");
   const oak_name = oak.name
   const oak_version = oak.version
-  const oak_avi = oak.avi
 
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
     
     .setColor(0x00AE86)
-    
+    .setFooter(oak_name + " " + oak_version, "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
+
     .setTitle(name)
     .setThumbnail(picture)
     .setDescription("[CLICK HERE FOR DIRECTIONS](" + map + ")")
@@ -26,7 +26,6 @@ module.exports.run = (client, message, args) => {
     .addField("**Ex Raid Eligable**", ex_raid)
     .addField("**Commands**", commands)
 
-    .setFooter(oak_name + " " + oak_version, oak_avi)
     .setTimestamp()
   
     message.channel.send({embed});
