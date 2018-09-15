@@ -4,12 +4,15 @@ module.exports.run = (client, message, args) => {
   const picture = gym.picture
   const map = gym.map
   const location = gym.location
+
+  const oak = require("../data/oak,json")
+  const oak_name = oak.name
     
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
     
     .setColor(0x00AE86)
-    .setFooter("© Professor Oak", "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
+    .setFooter(oak_name, "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
 
     .setTitle(name)
     .setThumbnail(picture)
