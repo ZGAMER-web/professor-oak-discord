@@ -6,7 +6,7 @@ module.exports.run = (client, message, args) => {
   const gym_location = gym.location
   const gym_access = gym.access
   const gym_ex_raid = gym.ex_raid
-  const gym_commands = gyms.commands
+  const gym_commands = gym.commands
 
   const oak = require("../data/oak.json")
   const oak_name = oak.name
