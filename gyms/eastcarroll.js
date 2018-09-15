@@ -4,10 +4,7 @@ module.exports.run = (client, message, args) => {
   const picture = gym.picture
   const map = gym.map
   const location = gym.location
-  const access = gyms.access
-  const ex_raid = gym.ex_raid
-  const commands = gym.commands
-
+    
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
     
@@ -18,9 +15,9 @@ module.exports.run = (client, message, args) => {
     .setThumbnail(picture)
     .setDescription("[CLICK HERE FOR DIRECTIONS](" + map + ")")
     .addField("**Location**", location)
-    .addField("**Access**", access)
-    .addField("**Ex Raid Eligable**", ex_raid)
-    .addField("**Commands**", commands)
+    .addField("**Access**", "Easy, Free Parking")
+    .addField("**Ex Raid Eligable**", "Yes")
+    .addField("**Commands**", "`eastcarroll` or `skatepark`")
 
     .setTimestamp()
   
