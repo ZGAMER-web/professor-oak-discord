@@ -26,7 +26,8 @@ module.exports.run = (client, message, args) => {
     .addField("**Ex Raid Eligable**", ex_raid)
     .addField("**Commands**", commands)
 
-    .setFooter(oak_name + " " + oak_version, oak_avi).setTimestamp()
+    .setFooter(oak_name + " " + oak_version, oak_avi)
+    .setTimestamp()
   
     message.channel.send({embed});
   }
