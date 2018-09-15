@@ -8,7 +8,7 @@ module.exports.run = (client, message, args) => {
   const ex_raid = gym.ex_raid
   const commands = gym.commands
 
-  const gym = require("../data/oak.json");
+  const oak = require("../data/oak.json");
   const oak_name = oak.name
   const oak_version = oak.version
   const oak_avi = oak.avi
