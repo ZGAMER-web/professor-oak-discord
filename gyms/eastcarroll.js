@@ -7,12 +7,14 @@ module.exports.run = (client, message, args) => {
 
   const oak = require("../data/oak.json")
   const oak_name = oak.name
+  const oak_version = oak.version
+  const oak_avi = oak.avi
     
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
     
     .setColor(0x00AE86)
-    .setFooter(oak_name, "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg")
+    .setFooter(oak_name + " " + oak_version, oak_avi)
 
     .setTitle(name)
     .setThumbnail(picture)
