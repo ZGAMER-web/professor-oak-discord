@@ -1,0 +1,20 @@
+{
+    "name": "Moltres",
+    "dex": "146",
+    "trainers_needed": "3",
+    "counter_01": "Tyranitar",
+    "counter_01_moveset": "Smack Down / Stone Edge",
+    "counter_02": "Omastar",
+    "counter_02_moveset": "Rock Throw (L) / Rock Slide (L)",
+    "counter_03": "Golem & Alolan Golem",
+    "counter_03_moveset": "Rock Throw / Stone Edge",
+    "counter_04": "Kyogre",
+    "counter_04_moveset": "Waterfall / Hydro Pump",
+    "counter_05": "Raikou",
+    "counter_05_moveset": "Thunder Shock / Wild Charge",
+    "counter_06": "Lunatone",
+    "counter_06_moveset": "Rock Throw / Rock Slide",
+    "counter_07": "Solrock",
+    "counter_07_moveset": "Rock Throw / Rock Slide"
+  }
+  
