@@ -1,6 +1,6 @@
 {
     "name": "Professor Oak",
-    "version": "v.4.0.3",
+    "version": "v.4.0.4",
     "avi": "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg",
     "welcome": "Welcome to the **Pokemon GO West GA** Discord Server.",
     "introduction": "My name is **Professor Oak**. I am a custom Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!oak** then a space, followed by a command.",

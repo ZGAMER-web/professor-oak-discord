@@ -11,7 +11,7 @@ const version = oak.version
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  client.user.setGame("!oak " + version);
+  client.user.setGame(prefix + " " + version);
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
@@ -26,19 +26,19 @@ try {
     console.error("No command found...");
   }    
   try {
-    let commandFile = require(`./gyms/${command}.js`);
+    let commandFile = require(`./commands/gyms/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No Gym found...");
   } 
   try {
-    let commandFile = require(`./pokestops/${command}.js`);
+    let commandFile = require(`./commands/pokestops/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No Pokestop found...");
   }
   try {
-    let commandFile = require(`./roles/${command}.js`);
+    let commandFile = require(`./commands/roles/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error("No role found...");
