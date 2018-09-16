@@ -50,7 +50,8 @@ client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
   }
-  const swearWords = ["darn"];
+  const swear_words = require("./data/swear-words.json")
+  const swearWords = swear_words.bad_words
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Oh no you said a bad word!!!").then(sentMessage =>{
     sentMessage.delete(5000)
