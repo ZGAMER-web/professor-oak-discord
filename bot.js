@@ -59,7 +59,6 @@ if( swearWords.some(word => message.content.includes(word)) ) {
     message.delete()
  }, 5000);
 }
-client.channels.get('483831639575887873').send('**' + member.user.username + '**' + " used a `swearword`.");
 });
 
 
