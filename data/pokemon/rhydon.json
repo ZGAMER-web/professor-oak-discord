@@ -1,0 +1,19 @@
+{
+    "name": "Rhydon",
+    "dex": "112",
+    "trainers_needed": "3",
+    "counter_01": "Kyogre",
+    "counter_01_moveset": "Waterfall / Hydro Pump",
+    "counter_02": "Gyarados",
+    "counter_02_moveset": "Waterfall / Hydro Pump",
+    "counter_03": "Venusaur",
+    "counter_03_moveset": "Vine Whip / Freenzy Plan (L), Solar Beam",
+    "counter_04": "Septile",
+    "counter_04_moveset": "Bullet Seed / Leaf Blade",
+    "counter_05": "Exeggutor & Alola Exeggutor",
+    "counter_05_moveset": "Bullet Seed / Solar Beam",
+    "counter_06": "Groudon",
+    "counter_06_moveset": "Mud Shot / Solar Beam",
+    "counter_07": "Vaporeon",
+    "counter_07_moveset": "Water Gun / Hydro Pump"
+  }

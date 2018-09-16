@@ -1,0 +1,19 @@
+{
+    "name": "Snorlax",
+    "dex": "143",
+    "trainers_needed": "3",
+    "counter_01": "Machamp",
+    "counter_01_moveset": "Counter / Dynamic Punch",
+    "counter_02": "Hariyama",
+    "counter_02_moveset": "Counter / Dynamic Punch",
+    "counter_03": "Heracross",
+    "counter_03_moveset": "Counter / Close Combat",
+    "counter_04": "Mewtwo",
+    "counter_04_moveset": "Confusion / Focus Blast",
+    "counter_05": "Rayquaza & Dragonite",
+    "counter_05_moveset": "Dragon Tail / Outrage",
+    "counter_06": "Blaxiken",
+    "counter_06_moveset": "Counter / Focus Blast",
+    "counter_07": "Moltres",
+    "counter_07_moveset": "Fire Spin / Sky Attack (L)"
+  }
