@@ -25,12 +25,12 @@ module.exports.run = (client, message, args) => {
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
       .setDescription("Legendary")
       .addField("**Buddy Distance**", buddy_distance)
-      .addField("**Raid Boss Max CP**", raid_boss_cp, true)
-      .addField("**Raid Boss Boosted Max CP**", raid_boss_cp_boosted, true)
-      .addField("**Fast Moves**", moveset_fast, true)
-      .addField("**Fast Moves**", moveset_charge, true)
-      .addField("**Legacy Fast Moves**", moveset_fast_legacy, true)
-      .addField("**Legacy Charge Moves**", moveset_charge_legacy, true)
+      .addField("**Raid Boss Max CP**", raid_boss_cp)
+      .addField("**Raid Boss Boosted Max CP**", raid_boss_cp_boosted)
+      .addField("**Fast Moves**", moveset_fast)
+      .addField("**Fast Moves**", moveset_charge)
+      .addField("**Legacy Fast Moves**", moveset_fast_legacy)
+      .addField("**Legacy Charge Moves**", moveset_charge_legacy)
       
   
       .setTimestamp()
