@@ -1,0 +1,19 @@
+{
+    "name": "Hitmonchan",
+    "dex": "107",
+    "trainers_needed": "1",
+    "counter_01": "Mewtwo",
+    "counter_01_moveset": "Confusion / Psychic",
+    "counter_02": "Espeon",
+    "counter_02_moveset": "Confusion / Future Site",
+    "counter_03": "Alakazam",
+    "counter_03_moveset": "Confusion / Future Sight",
+    "counter_04": "Gardevoir",
+    "counter_04_moveset": "Confusion / Dazzling Gleam",
+    "counter_05": "Moltres",
+    "counter_05_moveset": "Fire Spin / Sky Attack (L)",
+    "counter_06": "Metagross",
+    "counter_06_moveset": "Zen Headbutt / Psychic",
+    "counter_07": "Rayquaza",
+    "counter_07_moveset": "Air Slash / Aerial Ace"
+  }

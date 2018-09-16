@@ -1,0 +1,19 @@
+{
+    "name": "Machamp",
+    "dex": "068",
+    "trainers_needed": "1",
+    "counter_01": "Mewtwo",
+    "counter_01_moveset": "Confusion / Psychic",
+    "counter_02": "Espeon",
+    "counter_02_moveset": "Confusion / Psychic",
+    "counter_03": "Moltres",
+    "counter_03_moveset": "Fire Spin / Sky Attack (L)",
+    "counter_04": "Rayquaza",
+    "counter_04_moveset": "Air Slash / Aerial Ace",
+    "counter_05": "Alakazam",
+    "counter_05_moveset": "Confusion / Future Sight",
+    "counter_06": "Gardevoir",
+    "counter_06_moveset": "Confusion / Dazzling Gleam",
+    "counter_07": "Latios",
+    "counter_07_moveset": "Zen Headbutt / Psychic"
+  }

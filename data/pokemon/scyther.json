@@ -1,0 +1,19 @@
+{
+    "name": "Scyther",
+    "dex": "123",
+    "trainers_needed": "1",
+    "counter_01": "Tyranitar",
+    "counter_01_moveset": "Smack Down (L) / Stone Edge",
+    "counter_02": "Golem & Alola Golem",
+    "counter_02_moveset": "Rock Throw / Stone Edge",
+    "counter_03": "Omastar",
+    "counter_03_moveset": "Rock Throw (L), Rock Slide (L)",
+    "counter_04": "Moltres",
+    "counter_04_moveset": "Fire Spin / Sky Attack",
+    "counter_05": "Rayquaza",
+    "counter_05_moveset": "Air Slash / Ancient Power",
+    "counter_06": "Zapdos",
+    "counter_06_moveset": "Thunder Shock (L) / Thunderbolt",
+    "counter_07": "Raikou",
+    "counter_07_moveset": "Thunder Shock / Wild Charge"
+  }
