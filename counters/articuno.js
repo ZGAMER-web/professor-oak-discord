@@ -31,7 +31,7 @@ module.exports.run = (client, message, args) => {
   
       .setTitle("#" + dex + " " + name)
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00_shiny.png?raw=true")
-      .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainers with Pokemon of this strenght. Bringing an extra Trainer or two never hurts!\n(L) = Legacy\n(Shiny Image) = Raid Shiny Available")
+      .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainers with Pokemon of this strenght. Bringing an extra Trainer or two never hurts!\n(L) = Legacy")
       .addField(counter_01, counter_01_moveset)
       .addField(counter_02, counter_02_moveset)
       .addField(counter_03, counter_03_moveset)
