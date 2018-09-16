@@ -21,7 +21,9 @@ client.on("message", message => {
   
 try {
     let commandFile = require(`./commands/${command}.js`);
-    commandFile.run(client, message, args);
+    commandFile.run(client, message, args).then(sentMessage => {
+      sentMessage.delete(20000)
+    })
   } catch (err) {
     console.error("No command found...");
   }    
@@ -53,7 +55,7 @@ client.on("message", (message) => {
   const swearWords = ["darn", "shit", "fuck"];
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Maybe you shoudn't use words like that in this channel, save it for <#469511290054770708>. I'm gonna delete that...").then(sentMessage =>{
-    sentMessage.delete(5000)
+    sentMessage.delete(10000)
   })
   setTimeout(function(){ 
     message.delete()
