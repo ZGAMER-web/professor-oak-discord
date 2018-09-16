@@ -54,12 +54,12 @@ client.on("message", (message) => {
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Oh no you said a bad word!!!").then(sentMessage =>{
     sentMessage.delete(5000)
-  client.channels.get('483831639575887873').send('**' + member.user.username + '**, used a prohibited word.');
   })
+  client.channels.get('483831639575887873').send('**' + member.user.username + '**, used a prohibited word.');
   // Or just do message.delete();
   setTimeout(function(){ 
     message.delete()
- }, 100); //time in milliseconds
+ }, 1000); //time in milliseconds
 }
 });
 
