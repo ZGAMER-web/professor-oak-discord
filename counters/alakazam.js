@@ -43,7 +43,7 @@ module.exports.run = (client, message, args) => {
       .setTimestamp()
     
       message.channel.send({embed}).then(sentMessage => {
-        sentMessage.delete(10000)
-        message.delete(100)
+        sentMessage.delete(300000)
+        message.delete(300000)
       })
     }

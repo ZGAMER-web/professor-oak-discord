@@ -53,12 +53,13 @@ client.on("message", (message) => {
   const swearWords = ["shit", "fuck"];
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Maybe you shoudn't use words like that in this channel, save it for <#469511290054770708>. I'm gonna delete that...").then(sentMessage =>{
-    sentMessage.delete(10000)
+    sentMessage.delete(20000)
   })
   setTimeout(function(){ 
     message.delete()
  }, 5000);
 }
+client.channels.get('483831639575887873').send('**' + member.user.username + '**' + " used a `swearword`.");
 });
 
 
@@ -70,7 +71,9 @@ const oak_help = oak.help
 const oak_trainer_joined = oak.trainer_joined
 
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help); 
+  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help).then(sentMessage => {
+    sentMessage.delete(300000)
+  }) 
   member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_joined);
 });
 
@@ -79,7 +82,6 @@ const oak_trainer_left = oak.trainer_left
 
 client.on('guildMemberRemove', member => {
   member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_left);
-  //
 });
 
 client.login(process.env.BOT_TOKEN);
