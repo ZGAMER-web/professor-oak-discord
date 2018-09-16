@@ -1,5 +1,5 @@
 module.exports.run = (client, message, args) => {
-    const gym = require("../data/gyms/deeper_life_christian_center.json");
+    const gym = require("../../data/gyms/deeper_life_christian_center.json");
     const gym_name = gym.name
     const gym_picture = gym.picture
     const gym_map = gym.map
@@ -8,7 +8,7 @@ module.exports.run = (client, message, args) => {
     const gym_ex_raid = gym.ex_raid
     const gym_commands = gym.commands
   
-    const oak = require("../data/oak.json")
+    const oak = require("../../data/oak.json")
     const oak_name = oak.name
     const oak_version = oak.version
     const oak_avi = oak.avi
