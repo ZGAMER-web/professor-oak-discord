@@ -1,9 +1,14 @@
 module.exports.run = (client, message, args) => {
-    const pokemon = require("../data/pokemon/alakazam.json");
+    const pokemon = require("../data/pokemon/mewtwo.json");
     const name = pokemon.name
     const dex = pokemon.dex
     const moveset_fast = pokemon.moveset_fast
     const moveset_charge = pokemon.moveset_charge
+    const moveset_fast_legacy = pokemon.moveset_fast_legacy
+    const moveset_charge_legacy = pokemon.moveset_charge_legacy
+    const buddy_distance = pokemon.buddy_distance
+    const raid_boss_cp = pokemon.raid_boss_cp
+    const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
 
     const oak = require("../data/oak.json")
     const oak_name = oak.name
@@ -19,8 +24,14 @@ module.exports.run = (client, message, args) => {
       .setTitle("#" + dex + " " + name)
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
       .setDescription("Legendary")
-      .addField("**Fast Moves**", moveset_fast)
-      .addField("**Fast Moves**", moveset_charge)
+      .addField("**Buddy Distance**", buddy_distance)
+      .addField("**Raid Boss Max CP**", raid_boss_cp, true)
+      .addField("**Raid Boss Boosted Max CP**", raid_boss_cp_boosted, true)
+      .addField("**Fast Moves**", moveset_fast, true)
+      .addField("**Fast Moves**", moveset_charge, true)
+      .addField("**Legacy Fast Moves**", moveset_fast_legacy, true)
+      .addField("**Legacy Charge Moves**", moveset_charge_legacy, true)
+      
   
       .setTimestamp()
     
