@@ -1,0 +1,20 @@
+{
+    "name": "Zapdos",
+    "dex": "145",
+    "trainers_needed": "3",
+    "counter_01": "Tyranitar",
+    "counter_01_moveset": "Smack Down / Stone Edge",
+    "counter_02": "Golem & Alolan Golem",
+    "counter_02_moveset": "Rock Throw / Stone Edge",
+    "counter_03": "Rayquaza",
+    "counter_03_moveset": "Dragon Tail / Outrage",
+    "counter_04": "Mewtwo",
+    "counter_04_moveset": "Confusion / Shadow Ball (L)",
+    "counter_05": "Piloswine",
+    "counter_05_moveset": "Ice Shard / Avalanche",
+    "counter_06": "Jynx",
+    "counter_06_moveset": "Frost Breath / Avalanche",
+    "counter_07": "Dragonite",
+    "counter_07_moveset": "Dragon Tail / Outrage"
+  }
+  
