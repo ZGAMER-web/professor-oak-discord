@@ -6,20 +6,21 @@ exports.run = (client, message, args) => {
     
     member.addRole(role).catch(console.error);
     
-    message.channel.send(message.author.toString() + ", You've joined **Team Mystic**" + team_emoji + ". You now have access to your team chat, which is great for taking gyms and earning extra ball bonuses during raids.\n**Next Step** is to set your location so you can see the raid, quest and sightings channels for your area plus some other useful channels. To do this, reply with the location command found below. You can select multiple locations, however you will need to send each command in a new messagge.\nBremen = `!oak bremen`\nCarrollton = `!oak carrollton`\nFranklin = `!oak franklin`\nTemple = `!oak temple`\nVilla Rica = `!oak villarica`");
-
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
   
-    .setTitle("Team Mystic")
+    .setTitle("**You've joined Team Mystic**")
     
     .setColor(0x00AE86)
-    .setDescription("sdseds")
-    .setFooter("© Professor Oak", "https://github.com/benjaminatl/discord-professor-oak/blob/master/images/professor-oak-go.png?raw=true")
-    .setImage("https://github.com/benjaminatl/discord-professor-oak/blob/master/images/professor-oak-go.png?raw=true")
-    .setThumbnail("https://github.com/benjaminatl/discord-professor-oak/blob/master/images/professor-oak-go.png?raw=true")
+    .setDescription("You now have access to your team chat and a few various other channels. Now you need to set your location. To do this, reply back with one of the commands listed below.")
+    .setFooter("© Professor Oak", "https://github.com/benjaminatl/discord-professor-oak/blob/master/images/oak1.jpeg?raw=true")
+    .setThumbnail("https://github.com/benjaminatl/discord-professor-oak/blob/master/images/logos/team_mystic.png?raw=true")
     
-    .addField("test field", "description here", true)
+    .addField("Bremen", "`!oak area bremen`", true)
+    .addField("Carrollton", "`!oak area carrollton`", true)
+    .addField("Franklin", "`!oak area franklin`", true)
+    .addField("Temple", "`!oak area temple`", true)
+    .addField("Villa Rica", "`!oak area villa rica`", true)
 
     .setTimestamp()
   
