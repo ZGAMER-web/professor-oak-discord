@@ -50,11 +50,11 @@ client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
   }
-  const swear_words = require("./data/swear-words.json")
-  const swearWords = swear_words.bad_words
+  const swearWords = ["darn", "shucks", "frak", "shite"];
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Oh no you said a bad word!!!").then(sentMessage =>{
     sentMessage.delete(5000)
+  member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, used a prohibited word.');
   })
   // Or just do message.delete();
   setTimeout(function(){ 
