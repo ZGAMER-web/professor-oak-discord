@@ -7,6 +7,8 @@ module.exports.run = (client, message, args) => {
     const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
     const moveset_fast = pokemon.moveset_fast
     const moveset_charge = pokemon.moveset_charge
+    const moveset_fast_legacy = pokemon.moveset_fast_legacy
+    const moveset_charge_legacy = pokemon.moveset_charge_legacy
 
     const oak = require("../data/oak.json")
     const oak_name = oak.name
@@ -26,6 +28,8 @@ module.exports.run = (client, message, args) => {
       .addField("Raid Boss Max CP", raid_boss_cp + " or " + raid_boss_cp_boosted) 
       .addField("Fast Moves", moveset_fast)
       .addField("Charge Moves", moveset_charge)
+      .addField("Legacy Fast Moves", moveset_fast_legacy)
+      .addField("Legacy Charge Moves", moveset_charge_legacy)
   
       .setTimestamp()
     
