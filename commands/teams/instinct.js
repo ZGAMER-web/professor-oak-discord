@@ -1,5 +1,5 @@
 exports.run = (client, message, args) => {
-    let role = message.guild.roles.find("name", "mystic");
+    let role = message.guild.roles.find("name", "instinct");
     const team = require("../../data/teams.json")
     const join_team_description = team.join_team_description
     const oak = require("../../data/oak.json")
@@ -15,12 +15,12 @@ exports.run = (client, message, args) => {
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
   
-    .setTitle("**You've joined Team Mystic**")
+    .setTitle("**You've joined Team Instinct**")
     
     .setColor(0x00AE86)
     .setDescription(join_team_description)
     .setFooter(oak_name + " " + oak_version, oak_avi)
-    .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/logos/team_mystic.png?raw=true")
+    .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/logos/team_instinct.png?raw=true")
     
     .addField("Bremen", "`!oak location bremen`")
     .addField("Carrollton", "`!oak location carrollton`")
