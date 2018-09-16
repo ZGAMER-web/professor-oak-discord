@@ -50,9 +50,9 @@ client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
   }
-  const swearWords = ["darn", "shucks", "frak", "shite"];
+  const swearWords = ["darn", "shit", "fuck"];
 if( swearWords.some(word => message.content.includes(word)) ) {
-  message.reply("I've deleted that last message.").then(sentMessage =>{
+  message.reply("Maybe you shoudn't use words like that in this channel, save it for <#469511290054770708>. I'm gonna delete that...").then(sentMessage =>{
     sentMessage.delete(5000)
   })
   setTimeout(function(){ 
