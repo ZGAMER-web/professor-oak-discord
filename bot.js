@@ -54,6 +54,9 @@ client.on("message", (message) => {
 if( swearWords.some(word => message.content.includes(word)) ) {
   message.reply("Oh no you said a bad word!!!");
   // Or just do message.delete();
+  setTimeout(function(){ 
+    message.delete()
+ }, 5000); //time in milliseconds
 }
 });
 
