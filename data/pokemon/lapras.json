@@ -1,0 +1,20 @@
+{
+    "name": "Lapras",
+    "dex": "131",
+    "trainers_needed": "3",
+    "counter_01": "Raikou",
+    "counter_01_moveset": "Thuunder SHock / Wild Charge",
+    "counter_02": "Machamp",
+    "counter_02_moveset": "Counter / Dynamic Punch",
+    "counter_03": "Zapdos",
+    "counter_03_moveset": "Thunder Shock (L) / Thunderbolt",
+    "counter_04": "Tyranitar",
+    "counter_04_moveset": "Smack Down (L) / Stone Edge",
+    "counter_05": "Hariyama",
+    "counter_05_moveset": "Counter / Dynamic Punch",
+    "counter_06": "Venusaur",
+    "counter_06_moveset": "Razor Leaf / Freenzy Plant (L)",
+    "counter_07": "Alola Golem",
+    "counter_07_moveset": "Rock Throw / Wild Charge"
+  }
+  

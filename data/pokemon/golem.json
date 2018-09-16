@@ -1,0 +1,20 @@
+{
+    "name": "Golem",
+    "dex": "076",
+    "trainers_needed": "3",
+    "counter_01": "Kyogre",
+    "counter_01_moveset": "Water Fall / Hydro Pump",
+    "counter_02": "Gyarados",
+    "counter_02_moveset": "Water Fall / Hydro Pump",
+    "counter_03": "Venusaur",
+    "counter_03_moveset": "Vine Whip / Frenzy Plant (L), Solar Beam",
+    "counter_04": "Groudon",
+    "counter_04_moveset": "Mud Shot / Solar Beam",
+    "counter_05": "Exeggutor & Alola Exeggutor",
+    "counter_05_moveset": "Bullet Seed / Solar Beam",
+    "counter_06": "Sceptile",
+    "counter_06_moveset": "Bullet Seed / Leaf Blade",
+    "counter_07": "Blastoise",
+    "counter_07_moveset": "Water Gun / Hydro Cannon (L)"
+  }
+  
