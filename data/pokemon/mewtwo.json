@@ -1,6 +1,10 @@
 {
     "name": "Mewtwo",
     "dex": "150",
+    "moveset_fast": "Confusion, Psycho Cut",
+    "moveset_charge": "Hyper Beam, Psychic, Shadow Ball, Focus Blast",
+    "moveset_fast_legacy": "",
+    "moveset_charged_legacy": "Shadow Ball (ex raids only or by charge TM by Sep. 20)",
     "trainers_needed": "3",
     "counter_01": "Tyranitar\n(don't use for focus blast)",
     "counter_01_moveset": "Bite / Crunch",
