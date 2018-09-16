@@ -50,6 +50,11 @@ client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
   }
+  const swearWords = ["darn", "shucks", "frak", "shite"];
+if( swearWords.some(word => message.content.includes(word)) ) {
+  message.reply("Oh no you said a bad word!!!");
+  // Or just do message.delete();
+}
 });
 
 
