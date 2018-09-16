@@ -50,13 +50,14 @@ client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
   }
-  const swearWords = ["darn", "shucks", "frak", "shite"];
+  const swearWords = ["darn"];
 if( swearWords.some(word => message.content.includes(word)) ) {
-  message.reply("Oh no you said a bad word!!!");
+  message.reply("Oh no you said a bad word!!!").then(sentMessage =>{
+    sentMessage.delete(5000)
+  })
   // Or just do message.delete();
   setTimeout(function(){ 
     message.delete()
-    bot.message.delete()
  }, 5000); //time in milliseconds
 }
 });
