@@ -1,6 +1,7 @@
 exports.run = (client, message, args) => {
     let role = message.guild.roles.find("name", "carrollton");
     let area_location = "**Carrollton**";
+    
     const area = require("../../data/role.json")
     const area_location_description = area.area_location_description
 
@@ -8,13 +9,12 @@ exports.run = (client, message, args) => {
     const oak_name = oak.name
     const oak_version = oak.version
     const oak_avi = oak.avi
-    const message_delete_time_default = oak.message_delete_time_default
 
     let member = message.member;
     
     member.addRole(role).catch(console.error);
     message.reply("").then(message => {
-        message.delete(message_delete_time_default)
+        message.delete(20000)
     })
     
   const Discord = require("discord.js");
@@ -35,7 +35,7 @@ exports.run = (client, message, args) => {
 
     .setTimestamp()
   
-    message.channel.send({embed}).then(sentMessage => {
-      sentMessage.delete(message_delete_time_default)
+    message.channel.send({embed}).then(message => {
+      message.delete(20000)
     })
   }
