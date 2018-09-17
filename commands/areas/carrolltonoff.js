@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
-    let role = message.guild.roles.find("name", "villa rica");
-    let area_location = "**Villa Rica**";
+    let role = message.guild.roles.find("name", "carrollton");
+    let area_location = "**Carrollton**";
   
     const oak = require("../../data/oak.json")
     const oak_name = oak.name
@@ -10,10 +10,10 @@ exports.run = (client, message, args) => {
     let member = message.member;
   
     member.removeRole(role).catch(console.error);
-      message.reply("").then(sentMessage => {
-      sentMessage.delete(300000)
-    })
-    message.delete(300000)
+        message.reply("").then(sentMessage => {
+        sentMessage.delete(300000)
+      })
+      message.delete(300000)
     
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()

@@ -10,7 +10,10 @@ exports.run = (client, message, args) => {
   let member = message.member;
 
   member.addRole(role).catch(console.error);
-  member.removeRole(role).catch(console.error);
+      message.reply("").then(sentMessage => {
+      sentMessage.delete(300000)
+    })
+    message.delete(300000)
   
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
@@ -18,7 +21,7 @@ exports.run = (client, message, args) => {
     .setTitle("**You've turned on the** " + area_location + " area")
     
     .setColor(0x00AE86)
-    .setDescription("To turn on more areas, use one of the following commands below. To turn a area off, Use the same command again`.")
+    .setDescription("To turn on more areas, use one of the following commands below. To turn a area off, Use the area command, followed by a space, then the word `off`.")
     .setFooter(oak_name + " " + oak_version, oak_avi)
     .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/assets/map.png?raw=true")
     

@@ -1,6 +1,6 @@
 exports.run = (client, message, args) => {
-    let role = message.guild.roles.find("name", "villa rica");
-    let area_location = "**Villa Rica**";
+    let role = message.guild.roles.find("name", "bremen");
+    let area_location = "**Bremen**";
   
     const oak = require("../../data/oak.json")
     const oak_name = oak.name
