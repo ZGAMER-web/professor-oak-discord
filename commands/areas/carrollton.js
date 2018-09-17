@@ -1,7 +1,7 @@
 exports.run = (client, message, args) => {
     let role = message.guild.roles.find("name", "carrollton");
     let area_location = "**Carrollton**";
-    
+
     const area = require("../../data/role.json")
     const area_location_description = area.area_location_description
 
@@ -16,6 +16,7 @@ exports.run = (client, message, args) => {
     message.reply("").then(message => {
         message.delete(20000)
     })
+    message.delete(20000)
     
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
