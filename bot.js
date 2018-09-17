@@ -50,16 +50,14 @@ client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
   }
-  const swearWords = ["shit", "fuck"];
-if( swearWords.some(word => message.content.includes(word)) ) {
-  message.reply("Maybe you shoudn't use words like that in this channel, save it for <#469511290054770708>. I'm gonna delete that...").then(sentMessage =>{
-    sentMessage.delete(20000)
-  })
-  setTimeout(function(){ 
-    message.delete()
- }, 5000);
- message.channel.get().send(member.user + " said a `swearWord`.")
-}
+  const swearWords = ["shit", "Shit", "fuck", "Fuck"];
+  if( swearWords.some(word => message.content.includes(word)) ) {
+    message.reply("Maybe you shoudn't use words like that, Trainer. I'm gonna delete that...").then(sentMessage =>{
+      sentMessage.delete(20000)
+    })
+    message.delete(3000)
+    message.channel.get('483831639575887873').send(member.user + " said a `swearWord`.")
+  }
 });
 
 
