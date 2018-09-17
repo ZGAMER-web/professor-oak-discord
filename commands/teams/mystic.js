@@ -26,11 +26,11 @@ const embed = new Discord.RichEmbed()
   .setFooter(oak_name + " " + oak_version, oak_avi)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/logos/team_mystic.png?raw=true")
   
-  .addField("Bremen", "`!oak location bremen`")
-  .addField("Carrollton", "`!oak location carrollton`")
-  .addField("Franklin", "`!oak location franklin`")
-  .addField("Temple", "`!oak location temple`")
-  .addField("Villa Rica", "`!oak location villa rica`")
+  .addField("Bremen", "`!oak area bremen`")
+  .addField("Carrollton", "`!oak area carrollton`")
+  .addField("Franklin", "`!oak area franklin`")
+  .addField("Temple", "`!oak area temple`")
+  .addField("Villa Rica", "`!oak area villa rica`")
 
   .setTimestamp()
 

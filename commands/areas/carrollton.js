@@ -10,22 +10,23 @@ exports.run = (client, message, args) => {
   let member = message.member;
 
   member.addRole(role).catch(console.error);
+  member.removeRole(role).catch(console.error);
   
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
   
-    .setTitle("**You've turned on the** " + area_location)
+    .setTitle("**You've turned on the** " + area_location + " area")
     
     .setColor(0x00AE86)
-    .setDescription("join_team_description")
+    .setDescription("To turn on more areas, use one of the following commands below. To turn a area off, Use the same command again`.")
     .setFooter(oak_name + " " + oak_version, oak_avi)
-    .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/logos/team_valor.png?raw=true")
+    .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/assets/map.png?raw=true")
     
-    .addField("Bremen", "`!oak location bremen`")
-    .addField("Carrollton", "`!oak location carrollton`")
-    .addField("Franklin", "`!oak location franklin`")
-    .addField("Temple", "`!oak location temple`")
-    .addField("Villa Rica", "`!oak location villa rica`")
+    .addField("Bremen", "`!oak area bremen`")
+    .addField("Carrollton", "`!oak area carrollton`")
+    .addField("Franklin", "`!oak area franklin`")
+    .addField("Temple", "`!oak area temple`")
+    .addField("Villa Rica", "`!oak area villa rica`")
   
     .setTimestamp()
   
