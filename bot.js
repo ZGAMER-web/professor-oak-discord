@@ -50,7 +50,7 @@ client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
   }
-  const swearWords = ["shit", "Shit", "fuck", "Fuck"];
+  const swearWords = ["shit", "Shit", "fuck", "Fuck", "dick", "Dick", "pussy", "Pussy", "bitch", "Bitch", "cunt", "Cunt"];
   if( swearWords.some(word => message.content.includes(word)) ) {
     message.reply("Please refrain from using that tyoe of language on this server Trainer. I'm gonna delete that last message... I've informed the server mods of this action.").then(sentMessage =>{
       sentMessage.delete(20000)
