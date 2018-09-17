@@ -12,7 +12,9 @@ exports.run = (client, message, args) => {
     
     member.addRole(role).catch(console.error);
     client.channels.get('483831639575887873').send('**' + member.user.username + '**' + " joined team " + team_emoji);
-    message.reply("");
+    message.reply("").then(sentMessage => {
+      message.delete(message_delete_time_default)
+    })
     
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
@@ -34,6 +36,5 @@ exports.run = (client, message, args) => {
   
     message.channel.send({embed}).then(sentMessage => {
       sentMessage.delete(message_delete_time_default)
-      message.delete(message_delete_time_default)
     })
   }
