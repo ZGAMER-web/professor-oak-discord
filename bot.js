@@ -52,11 +52,11 @@ client.on("message", (message) => {
   }
   const swearWords = ["shit", "Shit", "fuck", "Fuck"];
   if( swearWords.some(word => message.content.includes(word)) ) {
-    message.reply("Maybe you shoudn't use words like that, Trainer. I'm gonna delete that...").then(sentMessage =>{
+    message.reply("Please refrain from using that tyoe of language on this server Trainer. I'm gonna delete that last message... I've informed the server mods of this action.").then(sentMessage =>{
       sentMessage.delete(20000)
     })
     message.delete(3000)
-    client.channels.get('483831639575887873').send(message.author.toString() + " used a `swearWord`.")
+    client.channels.get('483831639575887873').send(message.author.toString() + " used a `swearWord`. I've let them know not to use this type of language on this server.")
   }
 });
 

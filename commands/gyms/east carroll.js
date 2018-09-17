@@ -14,8 +14,6 @@ module.exports.run = (client, message, args) => {
     const oak_avi = oak.avi
     const message_delete_time_default = oak.message_delete_time_default
 
-    message.delete(message_delete_time_default)
-      
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()
       
@@ -34,5 +32,6 @@ module.exports.run = (client, message, args) => {
     
       message.channel.send({embed}).then(sentMessage => {
         sentMessage.delete(message_delete_time_default)
+        message.delete(message_delete_time_default)
       })
     }
