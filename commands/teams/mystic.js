@@ -14,6 +14,7 @@ exports.run = (client, message, args) => {
   message.reply("").then(sentMessage => {
     sentMessage.delete(10000)
   })
+  message.delete(10000)
   
 const Discord = require("discord.js");
 const embed = new Discord.RichEmbed()
