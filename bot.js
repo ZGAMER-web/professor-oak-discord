@@ -58,6 +58,7 @@ if( swearWords.some(word => message.content.includes(word)) ) {
   setTimeout(function(){ 
     message.delete()
  }, 5000);
+ message.channel.get().send(member.user + " said a `swearWord`.")
 }
 });
 
