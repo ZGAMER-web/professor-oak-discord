@@ -1,3 +1,4 @@
 {
-    "join_team_description": "You now have access to your team chat and a few various other channels. Now you need to set your area. To do this, reply back with one of the commands listed below. Be sure to spellit exactly as show. Multiple locations can be set, but only one per area message."
+    "join_team_description": "You now have access to your team chat and a few various other channels. Now you need to set your area. To do this, reply back with one of the commands listed below. Be sure to spellit exactly as show. Multiple locations can be set, but only one per area message.",
+    "area_location_description":"You can now see the raids, quests and sightings channels for this area. To turn on notifications, go to the channel you want to turn on, click the channel name at the top, then select *notification settings*."
 }

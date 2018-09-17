@@ -23,6 +23,8 @@ module.exports.run = (client, message, args) => {
     const oak_version = oak.version
     const oak_avi = oak.avi
     
+    message.reply("");
+    
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()
       

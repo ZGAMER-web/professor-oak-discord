@@ -13,6 +13,8 @@ module.exports.run = (client, message, args) => {
     const oak_version = oak.version
     const oak_avi = oak.avi
     const message_delete_time_default = oak.message_delete_time_default
+
+    message.reply("");
       
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()

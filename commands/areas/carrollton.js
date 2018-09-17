@@ -1,7 +1,9 @@
 exports.run = (client, message, args) => {
-    let role = message.guild.roles.find("name", "mystic");
-    const team = require("../../data/roles.json")
-    const join_team_description = team.join_team_description
+    let role = message.guild.roles.find("name", "carrollton");
+    let area_location = "**Carrollton**";
+    const area = require("../../data/role.json")
+    const area_location_description = area.area_location_description
+
     const oak = require("../../data/oak.json")
     const oak_name = oak.name
     const oak_version = oak.version
@@ -11,18 +13,19 @@ exports.run = (client, message, args) => {
     let member = message.member;
     
     member.addRole(role).catch(console.error);
-    client.channels.get('483831639575887873').send('**' + member.user.username + '**' + " joined team " + team_emoji);
-    message.reply("");
+    message.reply("").then(message => {
+        message.delete(message_delete_time_default)
+    })
     
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
   
-    .setTitle("**You've joined Team Mystic**")
+    .setTitle("**You've turned on the " + area_location + " area**")
     
     .setColor(0x00AE86)
-    .setDescription(join_team_description)
+    .setDescription(area_location_description)
     .setFooter(oak_name + " " + oak_version, oak_avi)
-    .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/logos/team_mystic.png?raw=true")
+    .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/logos/team_instinct.png?raw=true")
     
     .addField("Bremen", "`!oak area bremen`")
     .addField("Carrollton", "`!oak area carrollton`")
@@ -34,6 +37,5 @@ exports.run = (client, message, args) => {
   
     message.channel.send({embed}).then(sentMessage => {
       sentMessage.delete(message_delete_time_default)
-      message.delete(message_delete_time_default)
     })
   }
