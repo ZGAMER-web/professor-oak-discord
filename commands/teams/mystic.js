@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
     member.addRole(role).catch(console.error);
     client.channels.get('483831639575887873').send('**' + member.user.username + '**' + " joined team " + team_emoji);
     message.reply("").then(sentMessage => {
-      message.delete(message_delete_time_default)
+      sentMessage.delete(message_delete_time_default)
     })
     
   const Discord = require("discord.js");
