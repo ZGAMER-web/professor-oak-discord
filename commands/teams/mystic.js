@@ -6,14 +6,13 @@ exports.run = (client, message, args) => {
     const oak_name = oak.name
     const oak_version = oak.version
     const oak_avi = oak.avi
-    const message_delete_time_default = oak.message_delete_time_default
 
     let member = message.member;
     
     member.addRole(role).catch(console.error);
     client.channels.get('483831639575887873').send('**' + member.user.username + '**' + " joined team " + team_emoji);
     message.reply("").then(sentMessage => {
-      sentMessage.delete(message_delete_time_default)
+      sentMessage.delete("300000")
     })
     
   const Discord = require("discord.js");
@@ -35,6 +34,6 @@ exports.run = (client, message, args) => {
     .setTimestamp()
   
     message.channel.send({embed}).then(sentMessage => {
-      sentMessage.delete(message_delete_time_default)
+      sentMessage.delete("300000")
     })
   }
