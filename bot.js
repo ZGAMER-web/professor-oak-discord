@@ -56,7 +56,7 @@ client.on("message", (message) => {
       sentMessage.delete(20000)
     })
     message.delete(3000)
-    client.channels.get('483831639575887873').send(message.author.toString() + " used a `swearWord`.")
+    client.channels.get('483831639575887873').send(message.author.toString() + " used a `swearWord`.```" + word + "```")
   }
 });
 
