@@ -12,9 +12,9 @@ exports.run = (client, message, args) => {
   
   member.addRole(role).catch(console.error);
   message.reply("").then(sentMessage => {
-    sentMessage.delete(10000)
+    sentMessage.delete(300000)
   })
-  message.delete(10000)
+  message.delete(300000)
   
 const Discord = require("discord.js");
 const embed = new Discord.RichEmbed()
@@ -35,6 +35,6 @@ const embed = new Discord.RichEmbed()
   .setTimestamp()
 
   message.channel.send({embed}).then(sentMessage => {
-    sentMessage.delete(20000)
+    sentMessage.delete(300000)
   })
 };
