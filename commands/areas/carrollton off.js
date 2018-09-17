@@ -9,11 +9,11 @@ exports.run = (client, message, args) => {
     
     let member = message.member;
   
-    member.removeRole(role).catch(console.error);
-        message.reply("").then(sentMessage => {
-        sentMessage.delete(300000)
-      })
-      message.delete(300000)
+    member.addRole(role).catch(console.error);
+  message.reply("").then(sentMessage => {
+    sentMessage.delete(300000)
+  })
+  message.delete(300000)
     
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()
