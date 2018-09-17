@@ -1,5 +1,5 @@
 module.exports.run = (client, message, args) => {
-    const pokemon = require("../data/pokemon/golem.json");
+    const pokemon = require("../../data/pokemon/mewtwo.json");
     const name = pokemon.name
     const dex = pokemon.dex
     const trainers_needed = pokemon.trainers_needed
@@ -18,7 +18,7 @@ module.exports.run = (client, message, args) => {
     const counter_07 = pokemon.counter_07
     const counter_07_moveset = pokemon.counter_07_moveset
 
-    const oak = require("../data/oak.json")
+    const oak = require("../../data/oak.json")
     const oak_name = oak.name
     const oak_version = oak.version
     const oak_avi = oak.avi
