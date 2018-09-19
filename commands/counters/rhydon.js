@@ -17,13 +17,15 @@ module.exports.run = (client, message, args) => {
     const counter_06_moveset = pokemon.counter_06_moveset
     const counter_07 = pokemon.counter_07
     const counter_07_moveset = pokemon.counter_07_moveset
+    const raid_boss_cp = pokemon.raid_boss_cp
+    const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
 
     const oak = require("../../data/oak.json")
     const oak_name = oak.name
     const oak_version = oak.version
     const oak_avi = oak.avi
     
-    message.reply("").then(sentMessage => {
+    message.reply("Good luck on your battle! For a 100% IV, you'll need a **" + raid_boss_cp + " CP** or **" + raid_boss_cp_boosted + " weather boosted CP.**").then(sentMessage => {
       sentMessage.delete(300000)
     })
     message.delete(300000)
