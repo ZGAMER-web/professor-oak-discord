@@ -39,14 +39,18 @@ module.exports.run = (client, message, args) => {
       .setTitle("#" + dex + " " + name)
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_11.png?raw=true")
       .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainers with Pokemon of this strenght. Bringing an extra Trainer or two never hurts!\n(L) = Legacy")
-      .addField("**Max CP / Boosted Max CP**", "**" + raid_boss_cp + " / " + raid_boss_cp_boosted + "**")
       .addField(counter_01, counter_01_moveset)
       .addField(counter_02, counter_02_moveset)
       .addField(counter_03, counter_03_moveset)
       .addField(counter_04, counter_04_moveset)
       .addField(counter_05, counter_05_moveset)
       .addField(counter_06, counter_06_moveset)
-      .addField(counter_07, counter_07_moveset)      
+      .addField(counter_07, counter_07_moveset) 
+      
+      .addBlankField(true)
+
+      .addField("**Max Caught CP**", "**" + raid_boss_cp + "**")
+      .addField("**Max Caught Boosted CP**", "**" + raid_boss_cp_boosted + "**")
   
       .setTimestamp()
     
