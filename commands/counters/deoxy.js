@@ -25,7 +25,7 @@ module.exports.run = (client, message, args) => {
     const oak_version = oak.version
     const oak_avi = oak.avi
 
-    message.reply("Good luck on your battle, Trainer! For a 100% IV, you'll need a " + raid_boss_cp + " CP or " + raid_boss_cp_boosted + " weather boosted CP.").then(sentMessage => {
+    message.reply("Good luck on your battle! For a 100% IV, you'll need a **" + raid_boss_cp + " CP** or **" + raid_boss_cp_boosted + " weather boosted CP.**").then(sentMessage => {
       sentMessage.delete(300000)
     })
     message.delete(300000)
