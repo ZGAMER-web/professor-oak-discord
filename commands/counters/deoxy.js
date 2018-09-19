@@ -25,7 +25,7 @@ module.exports.run = (client, message, args) => {
     const oak_version = oak.version
     const oak_avi = oak.avi
 
-    message.reply("").then(sentMessage => {
+    message.reply("Good luck on your battle, Trainer! For a 100% IV, you'll need a " + raid_boss_cp + " CP or " + raid_boss_cp_boosted + " weather boosted CP.").then(sentMessage => {
       sentMessage.delete(300000)
     })
     message.delete(300000)
@@ -45,12 +45,7 @@ module.exports.run = (client, message, args) => {
       .addField(counter_04, counter_04_moveset)
       .addField(counter_05, counter_05_moveset)
       .addField(counter_06, counter_06_moveset)
-      .addField(counter_07, counter_07_moveset) 
-      
-      .addBlankField(true)
-
-      .addField("**Max Caught CP**", "**" + raid_boss_cp + "**")
-      .addField("**Max Caught Boosted CP**", "**" + raid_boss_cp_boosted + "**")
+      .addField(counter_07, counter_07_moveset)
   
       .setTimestamp()
     
