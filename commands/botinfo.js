@@ -1,3 +1,3 @@
 exports.run = (client, message, args) => {
-    message.channel.send("Server name = ${client.guild.name}").catch(console.error);
+    message.channel.send("Server name = ${client.guilds.name}\nTrainers = ${client.users.size}").catch(console.error);
 }
