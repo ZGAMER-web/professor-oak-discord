@@ -1,0 +1,22 @@
+{
+  "name": "Deoxy",
+  "dex": "",
+  "trainers_needed": "2",
+  "buddy_distance": "",
+  "raid_boss_cp": "",
+  "raid_boss_cp_boosted": "",
+  "counter_01": "Tyranitar",
+  "counter_01_moveset": "Bite/Crunch",
+  "counter_02": "Mewtwo",
+  "counter_02_moveset": "Psycho Cut/Shadow Ball (L)",
+  "counter_03": "Gengar",
+  "counter_03_moveset": "Shadow Claw (L) / Shadow Ball",
+  "counter_04": "",
+  "counter_04_moveset": "",
+  "counter_05": "",
+  "counter_05_moveset": "",
+  "counter_06": "",
+  "counter_06_moveset": "",
+  "counter_07": "",
+  "counter_07_moveset": ""
+}
