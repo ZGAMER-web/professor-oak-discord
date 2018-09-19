@@ -37,20 +37,17 @@ module.exports.run = (client, message, args) => {
       .setFooter(oak_name + " " + oak_version + " | Pokebattler", oak_avi)
   
       .setTitle("#" + dex + " " + name)
-      .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
+      .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_11.png?raw=true")
       .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainers with Pokemon of this strenght. Bringing an extra Trainer or two never hurts!\n(L) = Legacy")
+      .addField("Max CP / Boosted Max CP", raid_boss_cp + " / " + raid_boss_cp_boosted)
+      .addBlankField(true)
       .addField(counter_01, counter_01_moveset)
       .addField(counter_02, counter_02_moveset)
       .addField(counter_03, counter_03_moveset)
       .addField(counter_04, counter_04_moveset)
       .addField(counter_05, counter_05_moveset)
       .addField(counter_06, counter_06_moveset)
-      .addField(counter_07, counter_07_moveset)
-
-      .addBlankField(true)
-
-      .addField("Max CP", raid_boss_cp)
-      .addField("Boosted Max CP", raid_boss_cp_boosted)
+      .addField(counter_07, counter_07_moveset)      
   
       .setTimestamp()
     
