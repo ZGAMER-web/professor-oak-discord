@@ -11,8 +11,8 @@ const master_bot_log = oak.master_bot_log
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
   console.log(`I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`)
-  client.channels.get(master_bot_log).send(`I have update some data files to ${version}. I am now serving ${client.users.size} total Trainers, in ${client.channels.size} total channels across ${client.guilds.size} servers.`);
-  client.channels.find("name", "bot-log").send(`I have update some data files to ${version}. I am online and ready to server ${client.users.size} total Trainers!`);
+  client.channels.get(master_bot_log).send(`I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`);
+  client.channels.find("name", "bot-log").send(`I have restarted & updated some data files to ${version}. I am online and ready to server ${client.users.size} total Trainers!`);
   client.user.setGame(prefix + " " + version);
 });
 
@@ -26,8 +26,6 @@ client.on("guildCreate", guild => {
 
 client.on("guildDelete", guild => {
   client.channels.get(master_bot_log).send(`**Left Server:** I have now serving ${client.users.size} total Trainers in ${client.guilds.size} servers.\n${guild.name} (id: ${guild.id}).`)
-  client.channels.get('professor-oak').delete(1000);
-  client.channels.get('bot-log').delete(1000);
   client.user.setGame(prefix + " " + version);
 });
 
@@ -39,10 +37,10 @@ const oak_help = oak.help
 const oak_trainer_joined = oak.trainer_joined
 
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help).then(sentMessage => {
+  member.guild.channels.find("name", "professor-oak").send(`Welcome to **${guild.name}**` + member.user + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help).then(sentMessage => {
     sentMessage.delete(300000)
   }) 
-  member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_joined);
+  member.guild.channels.find("name", "bot-log").send('**' + member.user + '**, ' + oak_trainer_joined);
 });
 
 /// TRAINER LEFT THE SEVER
