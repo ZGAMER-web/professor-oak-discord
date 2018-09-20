@@ -31,11 +31,11 @@ client.on("guildDelete", guild => {
 });
 
 // NEW TRAINER!
-bot.on('guildMemberAdd', member => {
+client.on('guildMemberAdd', member => {
   member.guild.channels.get('483420033473576961').send('**' + member.user + '**, welcome to ' `"${guild.name}"`); 
 });
 
-bot.on('guildMemberRemove', member => {
+client.on('guildMemberRemove', member => {
   member.guild.channels.get(master_bot_log).send('**' + member.user + '**, has left the server' `${guild.name}`);
   //
 });
