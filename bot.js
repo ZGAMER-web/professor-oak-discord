@@ -9,22 +9,20 @@ const version = oak.version
 
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
-  // This event will run if the bot starts, and logs in, successfully.
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  // Example of changing the bot's playing game to something useful. `client.user` is what the
-  // docs refer to as the "ClientUser".
+  message.channel.get('Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.")
   client.user.setGame(`Serving ${client.guilds.size} servers`);
 });
 
 client.on("guildCreate", guild => {
-  // This event triggers when the bot joins a guild.
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+  message.channel.get('492120328160542720').send("New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!")
   client.user.setGame(`Serving ${client.guilds.size} servers`);
 });
 
 client.on("guildDelete", guild => {
-  // this event triggers when the bot is removed from a guild.
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
+  message.channel.get('492120328160542720').send("I have been removed from: ${guild.name} (id: ${guild.id})")
   client.user.setGame(`Serving ${client.guilds.size} servers`);
 });
 
