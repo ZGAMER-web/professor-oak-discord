@@ -7,12 +7,10 @@ const responderObject = require('./data/responder.json');
 const oak = require("./data/oak.json");
 const version = oak.version 
 
-const x_trainers = client.users.size
-
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
-  console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.channels.get('492120328160542720').send("I'm ready to serve " + x_trainers + " Trainers.")
+  console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`)
+  client.channels.get('492120328160542720').send(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
   client.user.setGame(prefix + " " + version);
 });
 
