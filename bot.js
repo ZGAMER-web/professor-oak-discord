@@ -20,12 +20,14 @@ client.on("guildCreate", guild => {
   guild.createChannel('professor-oak', 'text');
   guild.createChannel('bot-log', 'text');
   /// NEED TO RUN A MESSAGE FOR THE PROFESSOR OAK CHANNEL HERE
-  client.channels.get(master_bot_log).send(`**New Server:** ${guild.memberCount} total Trainers and ${client.channels.size} total channels.\n${guild.name} - (id: ${guild.id}). This server has `);
+  client.channels.get(master_bot_log).send(`**New Server:** ${guild.memberCount} Trainers.\n${guild.name} - (id: ${guild.id}).`);
   client.user.setGame(prefix + " " + version);
 });
 
 client.on("guildDelete", guild => {
   client.channels.get(master_bot_log).send(`**Left Server:** I have now serving ${client.users.size} total Trainers in ${client.guilds.size} servers.\n${guild.name} (id: ${guild.id}).`)
+  client.channels.get('professor-oak').delete(1000);
+  client.channels.get('bot-log').delete(1000);
   client.user.setGame(prefix + " " + version);
 });
 
@@ -96,11 +98,11 @@ client.on("message", (message) => {
   }
   const swearWords = ["shit", "Shit", "fuck", "Fuck", "dick", "Dick", "pussy", "Pussy", "bitch", "Bitch", "cunt", "Cunt"];
   if( swearWords.some(word => message.content.includes(word)) ) {
-    message.reply("Please refrain from using that tyoe of language on this server Trainer. I'm gonna delete that last message... I've informed the server mods of this action.").then(sentMessage =>{
+    message.reply("Please refrain from using that type of language on this server Trainer. I'm gonna delete that last message... I've informed the server mods of this action.").then(sentMessage =>{
       sentMessage.delete(20000)
     })
     message.delete(3000)
-    client.channels.get('483831639575887873').send(message.author.toString() + " used a `swearWord`. I've let them know not to use this type of language on this server.")
+    client.channels.find('bot-log').send(message.author.toString() + " used a `swearWord`. I've let them know not to use this type of language on this server.")
   }
 });
 
