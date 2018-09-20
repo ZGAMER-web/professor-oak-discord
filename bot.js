@@ -10,25 +10,22 @@ const master_bot_log = oak.master_bot_log
 
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
-  console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`)
-  client.channels.get(master_bot_log).send(`I have update some data files to ${version}. I am now serving ${client.users.size} Trainers, in ${client.channels.size} total channels across ${client.guilds.size} servers.`);
-  client.channels.find("name", "bot-log").send(`I have update some data files to ${version}. I am online and ready to server ${client.users.size} total Trainers worldwide!`);
+  console.log(`I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`)
+  client.channels.get(master_bot_log).send(`I have update some data files to ${version}. I am now serving ${client.users.size} total Trainers, in ${client.channels.size} total channels across ${client.guilds.size} servers.`);
+  client.channels.find("name", "bot-log").send(`I have update some data files to ${version}. I am online and ready to server ${client.users.size} total Trainers!`);
   client.user.setGame(prefix + " " + version);
 });
 
 client.on("guildCreate", guild => {
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members.`);
   guild.createChannel('professor-oak', 'text');
   guild.createChannel('bot-log', 'text');
-  client.channels.find("name", "bot-log").send(`I am now registered in **${guild.name}** serving ${guild.memberCount} total Trainers.`);
   /// NEED TO RUN A MESSAGE FOR THE PROFESSOR OAK CHANNEL HERE
-  client.channels.get(master_bot_log).send(`**New Server:** ${guild.name} (id: ${guild.id}). This server has ${guild.memberCount} members.`);
+  client.channels.get(master_bot_log).send(`**New Server:** ${guild.memberCount} total Trainers and ${client.channels.size} total channels.\n${guild.name} - (id: ${guild.id}). This server has `);
   client.user.setGame(prefix + " " + version);
 });
 
 client.on("guildDelete", guild => {
-  console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-  client.channels.get(master_bot_log).send(`**Left Server:** ${guild.name} (id: ${guild.id})`)
+  client.channels.get(master_bot_log).send(`**Left Server:** I have now serving ${client.users.size} total Trainers in ${client.guilds.size} servers.\n${guild.name} (id: ${guild.id}).`)
   client.user.setGame(prefix + " " + version);
 });
 
