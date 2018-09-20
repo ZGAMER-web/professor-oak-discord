@@ -10,18 +10,20 @@ const version = oak.version
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`)
-  client.channels.get('492130665836576819').send(`I have update some data files to version ${version}. I am now serving ${client.users.size} Trainers, in ${client.channels.size} total channels across ${client.guilds.size} servers.`);
-  client.channels.find("name", "bot-log").send(`I have update some data files to version ${version}. I am online and ready to server ${client.users.size} total Trainers worldwide!`);
+  client.channels.get('492130665836576819').send(`I have update some data files to ${version}. I am now serving ${client.users.size} Trainers, in ${client.channels.size} total channels across ${client.guilds.size} servers.`);
+  client.channels.find("name", "bot-log").send(`I have update some data files to ${version}. I am online and ready to server ${client.users.size} total Trainers worldwide!`);
   client.user.setGame(prefix + " " + version);
 });
 
 client.on("guildCreate", guild => {
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
+  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members.`);
+  client.channels.get('492130665836576819').send(`**New Server:** ${guild.name} (id: ${guild.id}). This server has ${guild.memberCount} members.`)
   client.user.setGame(prefix + " " + version);
 });
 
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
+  client.channels.get('').send(`**Left Server:** ${guild.name} (id: ${guild.id})`)
   client.user.setGame(prefix + " " + version);
 });
 
