@@ -37,10 +37,10 @@ const oak_help = oak.help
 const oak_trainer_joined = oak.trainer_joined
 
 client.on('guildMemberAdd', member => {
-  member.guild.channels.find("name", "professor-oak").send(`Welcome to **${guild.name}**` + member.user + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help).then(sentMessage => {
+  member.guild.channels.find("name", "professor-oak").send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help).then(sentMessage => {
     sentMessage.delete(300000)
   }) 
-  member.guild.channels.find("name", "bot-log").send('**' + member.user + '**, ' + oak_trainer_joined);
+  member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_joined);
 });
 
 /// TRAINER LEFT THE SEVER
