@@ -17,6 +17,8 @@ client.on("ready", () => {
 
 client.on("guildCreate", guild => {
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members.`);
+  guild.createChannel('professor-oak', 'text')
+    .then(console.log).catch(console.error);
   client.channels.get('492130665836576819').send(`**New Server:** ${guild.name} (id: ${guild.id}). This server has ${guild.memberCount} members.`)
   client.user.setGame(prefix + " " + version);
 });
