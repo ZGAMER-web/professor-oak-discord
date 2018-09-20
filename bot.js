@@ -31,8 +31,13 @@ client.on("guildDelete", guild => {
 });
 
 // NEW TRAINER!
-client.on("guildMemberAdd", (member) => {
-  member.guild.channels.get("professor-oak").send(`Welcome to **${guild.name}** ${member.user}!`);
+bot.on('guildMemberAdd', member => {
+  member.guild.channels.get('483420033473576961').send('**' + member.user + '**, welcome to ' `"${guild.name}"`); 
+});
+
+bot.on('guildMemberRemove', member => {
+  member.guild.channels.get(master_bot_log).send('**' + member.user + '**, has left the server' `${guild.name}`);
+  //
 });
 
 
