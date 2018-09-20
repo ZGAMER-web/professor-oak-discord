@@ -1,6 +1,8 @@
 exports.run = (client, message, args) => {
     let role = message.guild.roles.find("name", "bremen");
     let area_location = "**Bremen**";
+    const team = require("../../data/roles.json")
+    const area_location_description = team.area_location_description
   
     const oak = require("../../data/oak.json")
     const oak_name = oak.name
@@ -21,7 +23,7 @@ exports.run = (client, message, args) => {
       .setTitle("**You've turned on the** " + area_location + " area")
       
       .setColor(0x00AE86)
-      .setDescription("To turn on more areas, use one of the following commands below. To turn a area off, Use the area command, followed by a space, then the word `off`.")
+      .setDescription(area_location_description)
       .setFooter(oak_name + " " + oak_version, oak_avi)
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/assets/map.png?raw=true")
       
