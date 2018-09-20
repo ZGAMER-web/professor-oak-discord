@@ -5,13 +5,15 @@ const prefix = config.prefix
 const fs = require("fs");
 const responderObject = require('./data/responder.json');
 const oak = require("./data/oak.json");
-const version = oak.version
+const version = oak.version 
+
+const x_trainers = client.users.size
 
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
-  client.channels.get('492120328160542720').send("I have been removed from: ${guild.name} (id: ${guild.id})")
-  client.user.setGame(`Serving ${client.guilds.size} servers`);
+  client.channels.get('492120328160542720').send("I'm ready to serve " + x_trainers + " Trainers.")
+  client.user.setGame(prefix + " " + version);
 });
 
 client.on("guildCreate", guild => {
