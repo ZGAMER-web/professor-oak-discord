@@ -20,7 +20,7 @@ exports.run = (client, message, args) => {
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()
     
-      .setTitle("**You've turned on " + area_location)
+      .setTitle("**You've turned on the** " + area_location + " **area.**")
       
       .setColor(0x00AE86)
       .setDescription(area_location_description)
