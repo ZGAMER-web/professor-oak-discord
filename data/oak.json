@@ -2,6 +2,7 @@
     "name": "Professor Oak",
     "version": "v.4.0.9",
     "avi": "https://raw.githubusercontent.com/MrRecordHolder/professor-oak-discord/master/images/oak1.jpg",
+    "master_bot_log": "492130665836576819",
     "welcome": "Welcome to the **Pokemon GO West GA** Discord Server.",
     "introduction": "My name is **Professor Oak**. I am a custom Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!oak** then a space, followed by a command.",
     "set_team": "\nLets set your team using a command, Trainer! Reply with one of the following team commands in bold, be sure to spell it exactly as shown. **!oak mystic** or **!oak valor** or **!oak instinct**.",
