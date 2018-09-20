@@ -40,7 +40,7 @@ client.on('guildMemberAdd', member => {
   client.channels.find("name", "professor-oak").send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help).then(sentMessage => {
     sentMessage.delete(300000)
   }) 
-  member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_joined);
+  client.channels.find("name", master_bot_log).send('**' + member.user.username + '**, ' + oak_trainer_joined);
 });
 
 /// TRAINER LEFT THE SEVER
