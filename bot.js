@@ -16,34 +16,39 @@ client.on("ready", () => {
   client.user.setGame(prefix + " " + version);
 });
 
-// NEW SERVER!
 client.on("guildCreate", guild => {
   guild.createChannel('professor-oak', 'text');
   guild.createChannel('bot-log', 'text');
+  /// NEED TO RUN A MESSAGE FOR THE PROFESSOR OAK CHANNEL HERE
   client.channels.get(master_bot_log).send(`**New Server:** ${guild.memberCount} Trainers.\n${guild.name} - (id: ${guild.id}).`);
   client.user.setGame(prefix + " " + version);
 });
 
-// LEFT SERVER!
 client.on("guildDelete", guild => {
   client.channels.get(master_bot_log).send(`**Left Server:** I have now serving ${client.users.size} total Trainers in ${client.guilds.size} servers.\n${guild.name} (id: ${guild.id}).`)
   client.user.setGame(prefix + " " + version);
 });
 
-// NEW TRAINER!
+/// WELCOME NEW TRAINER
+const oak_welcome = oak.welcome
+const oak_introduction = oak.introduction
+const oak_set_team = oak.set_team
+const oak_help = oak.help
+const oak_trainer_joined = oak.trainer_joined
+
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483420033473576961').send('**' + member.user + '**, welcome to ' `"${guild.name}"`); 
+  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + " " + oak_set_team + "\n" + oak_help).then(sentMessage => {
+    sentMessage.delete(300000)
+  }) 
+  member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_joined);
 });
+
+/// TRAINER LEFT THE SEVER
+const oak_trainer_left = oak.trainer_left
 
 client.on('guildMemberRemove', member => {
-  member.guild.channels.get(master_bot_log).send('**' + member.user + '**, has left the server' `${guild.name}`);
-  //
+  member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_left);
 });
-
-
-
-
-
 
 
 // LOADS & RUNS THE COMMAND FOLDER
