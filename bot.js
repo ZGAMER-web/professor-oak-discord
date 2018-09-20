@@ -47,7 +47,7 @@ client.on('guildMemberAdd', member => {
 const oak_trainer_left = oak.trainer_left
 
 client.on('guildMemberRemove', member => {
-  member.guild.channels.get('483831639575887873').send('**' + member.user.username + '**, ' + oak_trainer_left);
+  client.channels.find("name", master_bot_log).send('**' + member.user.username + '**, ' + oak_trainer_left);
 });
 
 
