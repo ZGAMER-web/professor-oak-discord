@@ -1,6 +1,8 @@
 exports.run = (client, message, args) => {
     let role = message.guild.roles.find("name", "carrollton");
     let area_location = "**Carrollton**";
+    const location = require("../../data/roles.json")
+    const area_location_description = location.area_location_description
   
     const oak = require("../../data/oak.json")
     const oak_name = oak.name
@@ -10,18 +12,18 @@ exports.run = (client, message, args) => {
     let member = message.member;
   
     member.addRole(role).catch(console.error);
-  message.reply("").then(sentMessage => {
-    sentMessage.delete(300000)
-  })
-  message.delete(300000)
+      message.reply("").then(sentMessage => {
+      sentMessage.delete(300000)
+    })
+    message.delete(300000)
     
     const Discord = require("discord.js");
     const embed = new Discord.RichEmbed()
     
-      .setTitle("**You've turned off the** " + area_location + " area")
+      .setTitle("**You've turned off the** " + area_location + " **area.**")
       
       .setColor(0x00AE86)
-      .setDescription("To turn on more areas, use one of the following commands below. To turn a area off, Use the area command, followed by a space, then the word `off`.")
+      .setDescription(area_location_description)
       .setFooter(oak_name + " " + oak_version, oak_avi)
       .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/assets/map.png?raw=true")
       
@@ -36,5 +38,5 @@ exports.run = (client, message, args) => {
       message.channel.send({embed}).then(sentMessage => {
         sentMessage.delete(300000)
       })
-      member.guild.channels.get('483831639575887873').send('**' + member.user + '**, turned off the' + area_location + " area.");
+      member.guild.channels.get('483831639575887873').send(member.user + ', turned on the ' + area_location + " area.");
     };
