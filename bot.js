@@ -11,7 +11,7 @@ const master_bot_log = oak.master_bot_log
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
   console.log(`I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`)
-  client.channels.get(master_bot_log).send(`I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`);
+  client.channels.get(master_bot_log).send(`**UPDATE: ${version}** I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`);
   client.channels.find("name", "bot-log").send(`I have restarted & updated some data files to ${version}. I am online and ready to server ${client.users.size} total Trainers!`);
   client.user.setGame(prefix + " " + version);
 });
