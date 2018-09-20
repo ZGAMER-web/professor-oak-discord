@@ -38,5 +38,5 @@ exports.run = (client, message, args) => {
       message.channel.send({embed}).then(sentMessage => {
         sentMessage.delete(300000)
       })
-      member.guild.channels.get('483831639575887873').send('**' + member.user + '**, turned on the' + area_location + " area.");
+      member.guild.channels.get('483831639575887873').send(member.user + ', turned on the ' + area_location + " area.");
     };
