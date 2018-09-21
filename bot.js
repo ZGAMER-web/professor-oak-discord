@@ -11,8 +11,7 @@ const master_bot_log = oak.master_bot_log
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
   console.log(`I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`)
-  client.channels.get(master_bot_log).send(`**UPDATE: ${version}** I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`);
-  client.channels.find("name", "bot-log").send(`I have restarted & updated some data files to ${version}. I am online and ready to server ${client.users.size} total Trainers!`);
+  client.channels.find("name", "bot-log").send(`**UPDATE: ${version}** I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`);
   client.user.setGame(prefix + " " + version);
 });
 
@@ -20,12 +19,12 @@ client.on("guildCreate", guild => {
   guild.createChannel('professor-oak', 'text');
   guild.createChannel('bot-log', 'text');
   /// NEED TO RUN A MESSAGE FOR THE PROFESSOR OAK CHANNEL HERE
-  client.channels.get(master_bot_log).send(`**New Server:** ${guild.memberCount} Trainers.\n${guild.name} - (id: ${guild.id}).`);
+  client.channels.get('483831639575887873').send(`**New Server:** ${guild.memberCount} Trainers.\n${guild.name} - (id: ${guild.id}).`);
   client.user.setGame(prefix + " " + version);
 });
 
 client.on("guildDelete", guild => {
-  client.channels.get(master_bot_log).send(`**Left Server:** I have now serving ${client.users.size} total Trainers in ${client.guilds.size} servers.\n${guild.name} (id: ${guild.id}).`)
+  client.channels.get('483831639575887873').send(`**Left Server:** I have now serving ${client.users.size} total Trainers in ${client.guilds.size} servers.\n${guild.name} (id: ${guild.id}).`)
   client.user.setGame(prefix + " " + version);
 });
 
@@ -40,7 +39,7 @@ client.on('guildMemberAdd', member => {
   member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + "\n" + oak_set_team + "\n" + oak_help).then(sentMessage => {
     sentMessage.delete(300000)
   }) 
-  member.guild.channels.get('483831639575887873').send('**' + member.user + '**, ' + oak_trainer_joined);
+  member.guild.channels.get('483831639575887873').send(member.user + '**, ' + oak_trainer_joined);
 });
 
 /// TRAINER LEFT THE SEVER
