@@ -89,6 +89,13 @@ client.on("message", (message) => {
     message.delete(3000)
     client.channels.get('483831639575887873').send(message.author.toString() + " used a `swearWord`. I've let them know not to use this type of language on this server.")
   }
+  const oakHelp = ["!Oak", "! Oak", "! oak"];
+  if( oakHelp.some(word => message.content.includes(word)) ) {
+    message.reply("You need to use my command prefix like **!oak** for me to understand you properly, Trainer.").then(sentMessage =>{
+      sentMessage.delete(20000)
+    })
+    message.delete(20000)
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
