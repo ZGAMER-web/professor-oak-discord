@@ -39,7 +39,7 @@ client.on('guildMemberAdd', member => {
   member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + "\n" + oak_set_team + "\n" + oak_help).then(sentMessage => {
     sentMessage.delete(300000)
   }) 
-  member.guild.channels.get('483831639575887873').send(member.user + '**, ' + oak_trainer_joined);
+  member.guild.channels.get('483831639575887873').send(member.user + ', ' + oak_trainer_joined);
 });
 
 /// TRAINER LEFT THE SEVER
