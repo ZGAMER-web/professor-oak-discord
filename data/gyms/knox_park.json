@@ -1,0 +1,10 @@
+{
+    "name": "Knox Park",
+    "location": "Carrollton, GA",
+    "access": "Easy, Free parking. Small playground available.",
+    "nested": "Yes",
+    "ex_raid": "No",
+    "commands": "`knox park`",
+    "picture": "https://lh5.ggpht.com/loVkMMBsr3dYE3OG8nFJh3J9oTvHu7MW5UtYf8I5ecznN9NYH-ZFDqqNDoyy35wS891Bln5by5phF1VkP6aq",
+    "map": "https://goo.gl/maps/ryrSQyseD1Q2"
+}

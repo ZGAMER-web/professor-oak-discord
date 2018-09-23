@@ -1,0 +1,10 @@
+{
+    "name": "Recreation Center Park",
+    "location": "Carrollton, GA",
+    "access": "Easy, Free parking.",
+    "nested": "Yes",
+    "ex_raid": "No",
+    "commands": "`recreation center park`\n`cc rec`",
+    "picture": "https://lh5.ggpht.com/aiMOzX108F8s2zxdWWP2JAIFUCsECAhPG-Jf2MNCZSgZhx7BzCv3i7XGPXpfB4xqGTeoCxpZjEH6c73SLLQVSg",
+    "map": "https://goo.gl/maps/waqAqHaBHCL2"
+}
