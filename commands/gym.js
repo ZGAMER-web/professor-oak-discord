@@ -1,9 +1,11 @@
 exports.run = (client, message, args) => {  
   let gym = args.join(" ");
-  let Gym = require(`../commands/gyms/${gym}.js`);
-  let GymNickname = require(`../commands/gyms/nicknames/${gym}.js`);
-  
-  Gym.run(client, message, args).then(message => {
-    GymNickname.run(client, message, args);
-  })
+  let commandFile = require(`../commands/gyms/${gym}.js`);
+    commandFile.run(client, message, args);
+};
+
+exports.run = (client, message, args) => {  
+  let gym = args.join(" ");
+  let commandFile = require(`../commands/gyms/nickname/${gym}.js`);
+    commandFile.run(client, message, args);
 };
