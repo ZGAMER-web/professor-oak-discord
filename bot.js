@@ -64,7 +64,7 @@ client.on("message", message => {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
-      console.error(error);
+      console.error("No commands found...");
       message.reply("Sorry Trainer! I could find any data using that command. Be sure you start each new message using **!oak** followed by a space then a command. Be sure to __only__ use lowercase letters.").then(sentMessage =>{
         sentMessage.delete(20000)
       });
