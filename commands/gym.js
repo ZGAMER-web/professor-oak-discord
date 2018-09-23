@@ -14,11 +14,10 @@ module.exports.run = (client, message, args) => {
   const oak_version = oak.version
   const oak_avi = oak.avi
 
-  message.delete(300000).catch(console.error);
-
   message.reply("").then(sentMessage => {
-    sentMessage.delete(300000).catch(console.error);
+    sentMessage.delete(30000).catch((e) => { console.log(e); });
   })
+  message.delete(30000).catch((e) => { console.log(e); });
     
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
@@ -37,6 +36,6 @@ module.exports.run = (client, message, args) => {
   .setTimestamp()
 
   message.channel.send({embed}).then(sentMessage => {
-    sentMessage.delete(300000).catch(console.error);
+    sentMessage.delete(30000).catch((e) => { console.log(e); });
   })
 }
