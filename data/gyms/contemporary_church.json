@@ -1,10 +1,10 @@
 {
     "name": "Contemporary Church",
-    "location": "Villa Rica",
+    "location": "Villa Rica, GA",
     "access": "",
     "nested": "No",
     "ex_raid": "No",
-    "commands": "`contemorary church`",
+    "commands": "`contemporary church`",
     "picture": "https://lh4.ggpht.com/BGDTlDU77KprAy1BJAH4oIyGRSGHaXut9LKpsDYt2xrexsHu0JlM4IlP-tl6XgEqQN5UQh2TQOe6o7v7FT_G",
     "map": "https://goo.gl/maps/hhTgz2ytEqm"
 }
