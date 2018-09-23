@@ -1,0 +1,10 @@
+{
+    "name": "Carrollton Post Office",
+    "location": "Carrollton, GA",
+    "access": "Easy",
+    "nested": "No",
+    "ex_raid": "No",
+    "commands": "`carrollton post office`",
+    "picture": "https://lh4.ggpht.com/d2tkRZ0F7m_vvWlZqmEzO86_S_5oWrn3iUxoBOAYTTOkDjF8AfaDwceULkrMUFltr9dfz22iuvMLxscDkZUt",
+    "map": "https://goo.gl/maps/f5HdvNyf5Dw"
+}
