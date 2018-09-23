@@ -1,5 +1,4 @@
 exports.run = (client, message, args) => {  
-  let gym = args.join(" ");
-  let commandFile = require(`../commands/gyms/${gym}.js`);
+    let commandFile = require(`./carrollton giant cross.js`);
     commandFile.run(client, message, args);
 };
