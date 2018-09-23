@@ -6,7 +6,7 @@ const fs = require("fs");
 const responderObject = require('./data/responder.json');
 const oak = require("./data/oak.json");
 const version = oak.version 
-const master_bot_log = oak.master_bot_log
+
 
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
@@ -54,26 +54,21 @@ client.on('guildMemberRemove', member => {
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
-  
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
- 
   //CHECK FOR COMMANDS
   
-try {
+  try {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
-    console.error("No command found...");
-  }    
-  try {
-    let commandFile = require(`./gyms/${command}.js`);
-    commandFile.run(client, message, args);
-  } catch (err) {
-    console.error("No Gym found...");
-  }
+      console.error(error);
+      message.reply("Sorry Trainer! I could find any data using that command. Be sure you start each new message using **!oak** followed by a space then a command. Be sure to __only__ use lowercase letters.").then(sentMessage =>{
+        sentMessage.delete(20000)
+      });
+   }
 });
 
 // RESPONDER, from data
@@ -91,7 +86,7 @@ client.on("message", (message) => {
   }
   const oakHelp = ["!Oak", "! Oak", "! oak"];
   if( oakHelp.some(word => message.content.includes(word)) ) {
-    message.reply("You need to use my command prefix like **!oak** for me to understand you properly, Trainer.").then(sentMessage =>{
+    message.reply("Start each new message using **!oak**, then a space, then a command for me to understand you properly.").then(sentMessage =>{
       sentMessage.delete(20000)
     })
     message.delete(20000)
