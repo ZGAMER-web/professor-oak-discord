@@ -65,8 +65,9 @@ client.on("message", message => {
     commandFile.run(client, message, args);
   } catch (err) {
       console.error("No commands found...");
-      message.reply("Sorry Trainer! I could find any data using that command. Be sure you start each new message using **!oak** followed by a space then a command. Be sure to __only__ use lowercase letters.").then(sentMessage =>{
-        sentMessage.delete(20000)
+      message.reply("Sorry Trainer! I could find any data using that command. Be sure you start each new message using **!oak** followed by a space then a command. Be sure to __only__ use lowercase letters. See some examples above as some commands and arguments may have recently changed.").then(sentMessage =>{
+        sentMessage.delete(25000)
+        message.delete(25000)
       });
    }
 });
