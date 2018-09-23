@@ -13,29 +13,29 @@ module.exports.run = (client, message, args) => {
   const oak_version = oak.version
   const oak_avi = oak.avi
 
+  message.delete(300000).catch(console.error);
+
   message.reply("").then(sentMessage => {
-    sentMessage.delete(300000)
+    sentMessage.delete(300000).catch(console.error);
   })
-  message.delete(300000);
     
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
     
-    .setColor(0x00AE86)
-    .setFooter(oak_name + " " + oak_version, oak_avi)
+  .setColor(0x00AE86)
+  .setFooter(oak_name + " " + oak_version, oak_avi)
 
-    .setTitle(gym_name)
-    .setThumbnail(gym_picture)
-    .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
-    .addField("**Location**", gym_location)
-    .addField("**Access**", gym_access)
-    .addField("**Ex Raid Eligable**", gym_ex_raid)
-    .addField("**Commands**", gym_commands)
+  .setTitle(gym_name)
+  .setThumbnail(gym_picture)
+  .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
+  .addField("**Location**", gym_location)
+  .addField("**Access**", gym_access)
+  .addField("**Ex Raid Eligable**", gym_ex_raid)
+  .addField("**Commands**", gym_commands)
 
-    .setTimestamp()
-  
-    message.channel.send({embed}).then(sentMessage => {
-      sentMessage.delete(300000)
-      message.delete(300000)
-    })
-  }
+  .setTimestamp()
+
+  message.channel.send({embed}).then(sentMessage => {
+    sentMessage.delete(300000).catch(console.error);
+  })
+}
