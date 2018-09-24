@@ -14,7 +14,7 @@ module.exports.run = (client, message, args) => {
   const oak_version = oak.version
   const oak_avi = oak.avi
 
-  message.delete(30000).catch(console.error);
+  message.delete(70000).catch(console.error);
 
   message.reply("").then(sentMessage => {
     sentMessage.delete(30000).catch(console.error);
@@ -37,6 +37,6 @@ module.exports.run = (client, message, args) => {
   .setTimestamp()
 
   message.channel.send({embed}).then(sentMessage => {
-    sentMessage.delete(30000).catch(console.error);
+    sentMessage.delete(70000).catch(console.error);
   })
 }
