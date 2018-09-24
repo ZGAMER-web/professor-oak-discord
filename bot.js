@@ -10,7 +10,7 @@ const version = oak.version
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
   console.log(`I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`).catch(console.error);
-  client.channels.find("name", "bot-log").send(`**UPDATE: ${version}** I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`).catch(console.error);
+  client.channels.find("name", "bot-log").send(`**UPDATE: ${version}** I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`);
   client.user.setGame(prefix + " " + version);
 });
 
