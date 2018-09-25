@@ -44,16 +44,18 @@ client.on("message", message => {
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
-  let commandFile = require(`./commands/${command}.js`);
-  commandFile.run(client, message, args);
-  console.error("No commands found...");
-  message.reply("Sorry Trainer! I couldn't find any data using that command. Be sure you start each new message using **!oak** followed by a space then a command. Be sure to __only__ use lowercase letters. See some examples above as some commands and arguments may have recently changed.").then(sentMessage =>{
-    sentMessage.delete(30000)
-    message.delete(30000)
-  });
+  
+  try {
+    let commandFile = require(`./commands/${command}.js`);
+    commandFile.run(client, message, args);
+  } catch (err) {
+      console.error("No commands found...");
+      message.reply("Sorry Trainer! I couldn't find any data using that command. Be sure you start each new message using **!oak** followed by a space then a command. Be sure to __only__ use lowercase letters. See some examples above as some commands and arguments may have recently changed.").then(sentMessage =>{
+        sentMessage.delete(30000)
+        message.delete(30000)
+      });
+   }
 });
-
 
 client.on("message", (message) => {
   if(responderObject[message.content]) {
