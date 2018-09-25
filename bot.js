@@ -18,7 +18,6 @@ client.on("ready", () => {
 
 client.on("guildCreate", guild => {
   guild.createChannel('professor-oak', 'text');
-  /// NEED TO RUN A MESSAGE FOR THE PROFESSOR OAK CHANNEL HERE
   client.user.setGame(prefix + " " + version);
   console.log(`Ready to help ${client.users.size} Trainers in ${client.guilds.size} servers containing ${client.channels.size} combined channels.`);
 });
@@ -28,51 +27,34 @@ client.on("guildDelete", guild => {
   console.log(`Ready to help ${client.users.size} Trainers in ${client.guilds.size} servers containing ${client.channels.size} combined channels.`);
 });
 
-/// WELCOME NEW TRAINER
-const oak_welcome = oak.welcome
-const oak_introduction = oak.introduction
-const oak_set_team = oak.set_team
-const oak_help = oak.help
-const oak_trainer_joined = oak.trainer_joined
-
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get(oakChannel).send(member.user + ", " + oak_welcome + " " + oak_introduction + "\n" + oak_set_team + "\n" + oak_help).then(sentMessage => {
+  member.guild.channels.get(oakChannel).send("Welcome " + member.user + "! Before you start journey, I need to know your team and which areas you would like access to. Then, I'll make the correct channels visible for you. To start, just reply back with one of the following team commands in bold **!oak team mystic** or **!oak team valor** or **!oak team instinct**. Be sure to use **!oak** then a space followed by command and only use lowercase letter.").then(sentMessage => {
     sentMessage.delete(300000)
   });
-  member.guild.channels.get(serverLog).send(member.user + ', ' + oak_trainer_joined);
+  member.guild.channels.get(serverLog).send(member.user + " joined the server! Don't forget to welcome them mods.");
 });
-
-/// TRAINER LEFT THE SEVER
-const oak_trainer_left = oak.trainer_left
 
 client.on('guildMemberRemove', member => {
-  member.guild.channels.get(serverLog).send('**' + member.user + '**, ' + oak_trainer_left);
+  member.guild.channels.get(serverLog).send(member.user + " has left the server. I wonder what happened mods?");
 });
 
-
-// LOADS & RUNS THE COMMAND FOLDER
 client.on("message", message => {
   if (message.author.bot) return;
   if(message.content.indexOf(config.prefix) !== 0) return;
    
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  
-  //CHECK FOR COMMANDS
-  
-  try {
-    let commandFile = require(`./commands/${command}.js`);
-    commandFile.run(client, message, args);
-  } catch (err) {
-      console.error("No commands found...");
-      message.reply("Sorry Trainer! I couldn't find any data using that command. Be sure you start each new message using **!oak** followed by a space then a command. Be sure to __only__ use lowercase letters. See some examples above as some commands and arguments may have recently changed.").then(sentMessage =>{
-        sentMessage.delete(30000)
-        message.delete(30000)
-      });
-   }
+
+  let commandFile = require(`./commands/${command}.js`);
+  commandFile.run(client, message, args);
+  console.error("No commands found...");
+  message.reply("Sorry Trainer! I couldn't find any data using that command. Be sure you start each new message using **!oak** followed by a space then a command. Be sure to __only__ use lowercase letters. See some examples above as some commands and arguments may have recently changed.").then(sentMessage =>{
+    sentMessage.delete(30000)
+    message.delete(30000)
+  });
 });
 
-// RESPONDER, from data
+
 client.on("message", (message) => {
   if(responderObject[message.content]) {
     message.channel.send(responderObject[message.content]);
