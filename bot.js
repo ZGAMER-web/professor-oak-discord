@@ -6,26 +6,26 @@ const fs = require("fs");
 const responderObject = require('./data/responder.json');
 const oak = require("./data/oak.json");
 const version = oak.version 
+const oakChannel = oak.default_channel
+const serverLog = oak.server_log
 
 
 // WAKE UP PROFESSOR OAK!
 client.on("ready", () => {
-  console.log(`I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`)
-  client.channels.find("name", "bot-log").send(`**UPDATE: ${version}** I have restarted my database. I have reconized ${client.users.size} total Trainers, ${client.channels.size} total channels in ${client.guilds.size} servers.`);
   client.user.setGame(prefix + " " + version);
+  console.log(`Ready to help ${client.users.size} Trainers in ${client.guilds.size} servers containing ${client.channels.size} combined channels.`);
 });
 
 client.on("guildCreate", guild => {
   guild.createChannel('professor-oak', 'text');
-  guild.createChannel('bot-log', 'text');
   /// NEED TO RUN A MESSAGE FOR THE PROFESSOR OAK CHANNEL HERE
-  client.channels.get('483831639575887873').send(`**New Server:** ${guild.memberCount} Trainers.\n${guild.name} - (id: ${guild.id}).`);
   client.user.setGame(prefix + " " + version);
+  console.log(`Ready to help ${client.users.size} Trainers in ${client.guilds.size} servers containing ${client.channels.size} combined channels.`);
 });
 
 client.on("guildDelete", guild => {
-  client.channels.get('483831639575887873').send(`**Left Server:** I have now serving ${client.users.size} total Trainers in ${client.guilds.size} servers.\n${guild.name} (id: ${guild.id}).`)
   client.user.setGame(prefix + " " + version);
+  console.log(`Ready to help ${client.users.size} Trainers in ${client.guilds.size} servers containing ${client.channels.size} combined channels.`);
 });
 
 /// WELCOME NEW TRAINER
@@ -36,17 +36,17 @@ const oak_help = oak.help
 const oak_trainer_joined = oak.trainer_joined
 
 client.on('guildMemberAdd', member => {
-  member.guild.channels.get('483420033473576961').send(member.user + ", " + oak_welcome + " " + oak_introduction + "\n" + oak_set_team + "\n" + oak_help).then(sentMessage => {
+  member.guild.channels.get(oakChannel).send(member.user + ", " + oak_welcome + " " + oak_introduction + "\n" + oak_set_team + "\n" + oak_help).then(sentMessage => {
     sentMessage.delete(300000)
   });
-  member.guild.channels.get('483831639575887873').send(member.user + ', ' + oak_trainer_joined);
+  member.guild.channels.get(serverLog).send(member.user + ', ' + oak_trainer_joined);
 });
 
 /// TRAINER LEFT THE SEVER
 const oak_trainer_left = oak.trainer_left
 
 client.on('guildMemberRemove', member => {
-  member.guild.channels.get('483831639575887873').send('**' + member.user + '**, ' + oak_trainer_left);
+  member.guild.channels.get(serverLog).send('**' + member.user + '**, ' + oak_trainer_left);
 });
 
 
@@ -83,7 +83,7 @@ client.on("message", (message) => {
       sentMessage.delete(20000)
     })
     message.delete(3000)
-    client.channels.get('483831639575887873').send(message.author.toString() + " used a `swearWord`. I've let them know not to use this type of language on this server.")
+    client.channels.get(serverLog).send(message.author.toString() + " used a `swearWord`. I've let them know not to use this type of language on this server.")
   }
   const oakHelp = ["!Oak", "! Oak", "! oak"];
   if( oakHelp.some(word => message.content.includes(word)) ) {
