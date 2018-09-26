@@ -1,29 +1,18 @@
 module.exports.run = (client, message, args) => {
-  let pokemonData = args[0]
+  let args = args.join("_");
+  
+  let pokemonData = args[0];
   const pokemon = require(`../data/pokemon/${pokemonData}.json`);
+
+  let gymData = args[1];
+  const gym = require(`../data/gyms/${gymData}.json`);
+  const gym_name = gym.name
+
   const name = pokemon.name
   const dex = pokemon.dex
   const trainers_needed = pokemon.trainers_needed
-  const counter_01 = pokemon.counter_01
-  const counter_01_moveset = pokemon.counter_01_moveset
-  const counter_02 = pokemon.counter_02
-  const counter_02_moveset = pokemon.counter_02_moveset
-  const counter_03 = pokemon.counter_03
-  const counter_03_moveset = pokemon.counter_03_moveset
-  const counter_04 = pokemon.counter_04
-  const counter_04_moveset = pokemon.counter_04_moveset
-  const counter_05 = pokemon.counter_05
-  const counter_05_moveset = pokemon.counter_05_moveset
-  const counter_06 = pokemon.counter_06
-  const counter_06_moveset = pokemon.counter_06_moveset
-  const counter_07 = pokemon.counter_07
-  const counter_07_moveset = pokemon.counter_07_moveset
   const raid_boss_cp = pokemon.raid_boss_cp
   const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
-  
-  let gymData = args[1]
-  const gym = require(`../data/gyms/${gymData}.json`);
-  const gym_name = gym.name
 
   const oak = require("../data/oak.json")
   const oak_name = oak.name
