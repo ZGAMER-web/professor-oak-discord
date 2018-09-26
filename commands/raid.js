@@ -1,5 +1,5 @@
 module.exports.run = (client, message, args) => {
-  let pokemonData = args[0]
+  let pokemonData = args[0];
   const pokemon = require(`../data/pokemon/${pokemonData}.json`);
   const name = pokemon.name
   const dex = pokemon.dex
@@ -7,10 +7,8 @@ module.exports.run = (client, message, args) => {
   const raid_boss_cp = pokemon.raid_boss_cp
   const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
   
-  let gymData = args[1]
-  let gymData2 = args[2]
-  let gymData3 = args[3]
-  const gym = require(`../data/gyms/${gymData}${gymData2}${gymData3}.json`);
+  let gymData = args.join("_")[1];
+  const gym = require(`../data/gyms/${gymData}.json`);
   const gym_name = gym.name
 
   const oak = require("../data/oak.json")
