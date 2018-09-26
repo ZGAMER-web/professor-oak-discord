@@ -28,7 +28,7 @@ module.exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setFooter(oak_name + " " + oak_version + " | Pokebattler", oak_avi)
 
-  .setTitle(name + " Raid @ " gym_name)
+  .setTitle(name + " Raid @ " + gym_name)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
   .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
   .addField("**Time Left**", raidTimer + " minutes")
