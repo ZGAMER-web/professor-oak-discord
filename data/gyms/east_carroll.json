@@ -1,9 +1,9 @@
 {
     "name": "East Carroll",
     "location": "Carrollton, GA",
-    "access": "Easy, Free Parking. Diffucult during school release 1:30pm-3:30pm",
-    "nested": "No",
-    "ex_raid": "No",
+    "access": "Easy, Free Parking.",
+    "nested": "Yes",
+    "ex_raid": "Yes",
     "commands": "`east carroll`",
     "picture": "https://lh3.ggpht.com/TezUfbTmNcOZheSzLcq2Cfen7TSHCHAQKMS0nO0OYRh1X4Zzljer9QuPOouW5TAKPiPnI65WsCWcPQR5JreN",
     "map": "https://goo.gl/maps/q8qup3vJkrt"
