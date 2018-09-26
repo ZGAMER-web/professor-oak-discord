@@ -1,29 +1,17 @@
 module.exports.run = (client, message, args) => {
-
-  let msg = message.content;
-
-// now pull out the command arguments - everything after the first space in message.content
-let argString = msg.substr( msg.indexOf(' ') + 1 );
-
-// argString should be "0123 testName"
-// -> now split argString into pieces (id and new nickname)
-let argArr = argString.split(',');
-
-// argArr should be ["0123", "testName"]
-// -> now store each argument into its own new variable
-let [pokemonData, gymData] = argArr;
-
-
+  let pokemonData = args[0]
   const pokemon = require(`../data/pokemon/${pokemonData}.json`);
-
-  const gym = require(`../data/gyms/${gymData}.json`);
-  const gym_name = gym.name
-
   const name = pokemon.name
   const dex = pokemon.dex
   const trainers_needed = pokemon.trainers_needed
   const raid_boss_cp = pokemon.raid_boss_cp
   const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
+  
+  let gymData = args[1]
+  let gymData2 = args[2]
+  let gymData3 = args[3]
+  const gym = require(`../data/gyms/${gymData}${gymData2}${gymData3}.json`);
+  const gym_name = gym.name
 
   const oak = require("../data/oak.json")
   const oak_name = oak.name
