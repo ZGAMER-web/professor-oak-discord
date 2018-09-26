@@ -12,6 +12,8 @@ module.exports.run = (client, message, args) => {
   const gym_name = gym.name
   const gym_map = gym.map
 
+  let raidTimer = args[3]
+
   const oak = require("../data/oak.json")
   const oak_name = oak.name
   const oak_version = oak.version
@@ -26,17 +28,15 @@ module.exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setFooter(oak_name + " " + oak_version + " | Pokebattler", oak_avi)
 
-  .setTitle(name + " Raid!")
+  .setTitle(name + " Raid @ " gym_name)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
   .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
-  .addField("**Gym name**", gym_name)
-  .addField("**Trainers Needed**", trainers_needed + " w/ correct counters. Double without!")
-  .addField("**Max CP**", raid_boss_cp + " or " + raid_boss_cp_boosted)
+  .addField("**Time Left**", raidTimer + " minutes")
+  .addField("Trainers Needed", trainers_needed + " w/ correct counters. Double without!")
+  .addField("Max CP", raid_boss_cp + " or " + raid_boss_cp_boosted)
 
   .setTimestamp()
 
-  client.channels.get("494565971848200220").send({embed}).then(sentMessage => {
-    sentMessage.delete(deleteTimer).catch(console.error);
-  })
+  client.channels.get("494640269455786003").send({embed});
 }
 
