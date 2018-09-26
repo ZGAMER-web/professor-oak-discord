@@ -41,7 +41,7 @@ module.exports.run = (client, message, args) => {
 
   .setTitle("#" + dex + " " + name)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
-  .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainer(s) with Pokemon of this strenght. With no counters, double the amount shown. Bringing an extra Trainer or two never hurts!\n(L) = Legacy")
+  .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainer(s) with Pokemon of this strenght. Trainers with little to no counters need double the amount shown. Bringing an extra Trainer or two never hurts!\n(L) = Legacy Move")
   .addField(counter_01, counter_01_moveset)
   .addField(counter_02, counter_02_moveset)
   .addField(counter_03, counter_03_moveset)

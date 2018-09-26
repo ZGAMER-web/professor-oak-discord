@@ -13,11 +13,12 @@ module.exports.run = (client, message, args) => {
   const oak_name = oak.name
   const oak_version = oak.version
   const oak_avi = oak.avi
+  const deleteTimer = oak.deleteTimer_long
 
-  message.delete(90000).catch(console.error);
+  message.delete(deleteTimer).catch(console.error);
 
   message.reply("").then(sentMessage => {
-    sentMessage.delete(90000).catch(console.error);
+    sentMessage.delete(deleteTimer).catch(console.error);
   })
     
   const Discord = require("discord.js");
@@ -37,6 +38,6 @@ module.exports.run = (client, message, args) => {
   .setTimestamp()
 
   message.channel.send({embed}).then(sentMessage => {
-    sentMessage.delete(90000).catch(console.error);
+    sentMessage.delete(deleteTimer).catch(console.error);
   })
 }
