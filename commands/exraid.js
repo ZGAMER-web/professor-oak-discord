@@ -28,7 +28,7 @@ module.exports.run = (client, message, args) => {
   .addField("**Bremen**", "N/A", true)
   .addField("**Carrollton**", "Starbucks, East Carroll", true)
   .addField("**Franklin**", "N/A", true)
-  .addField("**Temple**", "N/A", true)
+  .addField("**Temple**", "Temple Recreation Center", true)
   .addField("**Villa Rica**", "Gold Dust Park Pavilion", true)
 
   message.channel.send({embed}).then(sentMessage => {
