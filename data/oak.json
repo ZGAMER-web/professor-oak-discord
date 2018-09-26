@@ -5,10 +5,6 @@
     "default_channel": "483420033473576961",
     "master_bot_log": "492130665836576819",
     "server_log": "483831639575887873",
-    "welcome": "Welcome to the **Pokemon GO West GA** Discord Server!",
-    "introduction": "My name is **Professor Oak**. I am a Discord Bot that will help you along your journey. To interact with me, you must start each __new__ message with **!oak** then a space, followed by a command.",
-    "set_team": "\nLets set your team using a command now... Reply with one of the following team commands in bold, be sure to spell it exactly as shown. **!oak team mystic** or **!oak team valor** or **!oak team instinct**.",
-    "help": "\n*For help, ask a Trainer in* <#483421937641586699>.",
-    "trainer_left": "has left the server.",
-    "trainer_joined": "has joined the server"
+    "deleteTimer_default": "90000",
+    "deleteTimer_long": "150000"
 }
