@@ -10,6 +10,7 @@ module.exports.run = (client, message, args) => {
   let gymData = args[1];
   const gym = require(`../data/gyms/${gymData}.json`);
   const gym_name = gym.name
+  const gym_map = gym.map
 
   const oak = require("../data/oak.json")
   const oak_name = oak.name
@@ -18,10 +19,6 @@ module.exports.run = (client, message, args) => {
   const deleteTimer = oak.deleteTimer_default
 
   message.delete(deleteTimer).catch(console.error);
-
-  message.reply("Good luck on your battle! For a 100% IV, you'll need a **" + raid_boss_cp + " CP** or **" + raid_boss_cp_boosted + " weather boosted CP.**").then(sentMessage => {
-    sentMessage.delete(deleteTimer).catch(console.error);
-  })
   
   const Discord = require("discord.js");
   const embed = new Discord.RichEmbed()
@@ -29,14 +26,16 @@ module.exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setFooter(oak_name + " " + oak_version + " | Pokebattler", oak_avi)
 
-  .setTitle("#" + dex + " " + name)
+  .setTitle(name + " Raid!")
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
-  .setDescription("This simulation was done using level 30 attackers and no dodging. Beating " + name + " should take " + trainers_needed + " Trainer(s) with Pokemon of this strenght. Trainers with little to no counters need double the amount shown. Bringing an extra Trainer or two never hurts!\n(L) = Legacy Move")
+  .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
   .addField("**Gym name**", gym_name)
+  .addField("**Trainers Needed**", trainers_needed + " w/ correct counters. Double without!")
+  .addField("**Max CP**", raid_boss_cp + " or " + raid_boss_cp_boosted)
 
   .setTimestamp()
 
-  message.channel.send({embed}).then(sentMessage => {
+  client.channels.get("494565971848200220").send({embed}).then(sentMessage => {
     sentMessage.delete(deleteTimer).catch(console.error);
   })
 }
