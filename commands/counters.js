@@ -21,7 +21,7 @@ module.exports.run = (client, message, args) => {
       const raid_boss_cp = pokemon.raid_boss_cp
       const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
   
-      const oak = require("../../data/oak.json")
+      const oak = require("../data/oak.json")
       const oak_name = oak.name
       const oak_version = oak.version
       const oak_avi = oak.avi
