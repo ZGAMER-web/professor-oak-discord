@@ -7,7 +7,7 @@ module.exports.run = (client, message, args) => {
   const raid_boss_cp = pokemon.raid_boss_cp
   const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
   
-  let gymData = args.join("_")[1];
+  let gymData = args[1];
   const gym = require(`../data/gyms/${gymData}.json`);
   const gym_name = gym.name
 
