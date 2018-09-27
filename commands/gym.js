@@ -1,5 +1,5 @@
 module.exports.run = (client, message, args) => {
-  let gymData = args.join("_");
+  let gymData = args.join("");
   const gym = require(`../data/gyms/${gymData}.json`);
   const gym_name = gym.name
   const gym_picture = gym.picture
