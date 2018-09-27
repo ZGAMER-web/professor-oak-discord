@@ -31,9 +31,8 @@ module.exports.run = (client, message, args) => {
 
   .setTitle("**" + name + " Raid**" + "\n@" + gym_name)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
-  .setDescription("Despawn Time: ", raidTimer + " minutes left\n" + "[GET DIRECTIONS](" + gym_map + ")")
-  .addField("Ex Raid Eligable", gym_ex_raid)
-  .addField("Gym Access", gym_access)
+  .setDescription("Despawn: " + raidTimer + " minutes left\n" + "Ex Raid Eligable: " + gym_ex_raid + "\nGym Access: " + gym_access + "\n[GET DIRECTIONS](" + gym_map + ")")
+
   .addField(name + " Max CP", raid_boss_cp + " or " + raid_boss_cp_boosted)
 
   .setTimestamp()
