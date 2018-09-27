@@ -27,11 +27,9 @@ module.exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setFooter(oak_name + " " + oak_version, oak_avi)
 
-  .setTitle("**" + name + " Raid!**\n**@" + gym_name + "**")
+  .setTitle("**" + name + " Raid!**\nmax cp: " + raid_boss_cp + " or " + raid_boss_cp_boosted)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
-  .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
-  .addField("**Time Left**", raidTimer + " minutes")
-  .addField("Max CP", raid_boss_cp + " or " + raid_boss_cp_boosted)
+  .setDescription("Gym: " + gym_name + "\nDespawn Time: " + raidTimer + "\n[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
 
   .setTimestamp()
 
