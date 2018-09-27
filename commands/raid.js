@@ -3,7 +3,6 @@ module.exports.run = (client, message, args) => {
   const pokemon = require(`../data/pokemon/${pokemonData}.json`);
   const name = pokemon.name
   const dex = pokemon.dex
-  const trainers_needed = pokemon.trainers_needed
   const raid_boss_cp = pokemon.raid_boss_cp
   const raid_boss_cp_boosted = pokemon.raid_boss_cp_boosted
   
@@ -28,11 +27,9 @@ module.exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setFooter(oak_name + " " + oak_version + " | Pokebattler", oak_avi)
 
-  .setTitle("**" + name + " Raid!**")
+  .setTitle("**" + name + " Raid!**\n**@" + gym_name + "**")
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
   .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
-  .setImage("https://goo.gl/maps/3Fi48njJET62")
-  .addField("Gym Name", gym_name)
   .addField("**Time Left**", raidTimer + " minutes")
   .addField("Max CP", raid_boss_cp + " or " + raid_boss_cp_boosted)
 
