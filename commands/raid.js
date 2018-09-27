@@ -31,7 +31,8 @@ module.exports.run = (client, message, args) => {
   .setTitle("**" + name + " Raid!**")
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
   .setDescription("[CLICK HERE FOR DIRECTIONS](" + gym_map + ")")
-  .addField("**Gym Name**", gym_name)
+  .setImage("https://goo.gl/maps/3Fi48njJET62")
+  .addField("Gym Name", gym_name)
   .addField("**Time Left**", raidTimer + " minutes")
   .addField("Max CP", raid_boss_cp + " or " + raid_boss_cp_boosted)
 
