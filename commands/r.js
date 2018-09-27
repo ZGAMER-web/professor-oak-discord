@@ -10,6 +10,8 @@ module.exports.run = (client, message, args) => {
   const gym = require(`../data/gyms/${gymData}.json`);
   const gym_name = gym.name
   const gym_map = gym.map
+  const gym_ex_raid = gym.ex_raid
+  const gym_access = gym.access
 
   let raidTimer = args[2]
 
@@ -27,11 +29,13 @@ module.exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setFooter(oak_name + " " + oak_version, oak_avi)
 
-  .setTitle("**" + name + " Raid**" + " @" + gym_name)
+  .setTitle("**" + name + " Raid**" + "\n@" + gym_name)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
   .setDescription("[GET DIRECTIONS](" + gym_map + ")")
   .addField("Despawn Time: ", raidTimer + " minutes left")
-  .addField("Max CP", raid_boss_cp + " or " + raid_boss_cp_boosted)
+  .addField("Ex Raid Eligable", gym_ex_raid)
+  .addField("Gym Access", gym_access)
+  .addField(name + " Max CP", raid_boss_cp + " or " + raid_boss_cp_boosted)
 
   .setTimestamp()
 
