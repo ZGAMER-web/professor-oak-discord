@@ -30,6 +30,8 @@ module.exports.run = (client, message, args) => {
 
   .setTimestamp()
 
-  client.channels.get("483107603333906454").send({embed});
+  client.channels.get("494881248708263946").send({embed}).then(sentMessage => {
+    sentMessage.delete(3600000).catch(console.error);
+  });
 }
 
