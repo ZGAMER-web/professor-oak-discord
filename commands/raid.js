@@ -25,7 +25,7 @@ module.exports.run = (client, message, args) => {
   const embed = new Discord.RichEmbed()
     
   .setColor(0x00AE86)
-  .setFooter(oak_name + " " + oak_version + " | Pokebattler", oak_avi)
+  .setFooter(oak_name + " " + oak_version, oak_avi)
 
   .setTitle("**" + name + " Raid!**\n**@" + gym_name + "**")
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
