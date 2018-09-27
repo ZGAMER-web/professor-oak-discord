@@ -30,6 +30,6 @@ module.exports.run = (client, message, args) => {
 
   .setTimestamp()
 
-  client.channels.get("494640269455786003").send({embed});
+  client.channels.get("483107603333906454").send({embed});
 }
 

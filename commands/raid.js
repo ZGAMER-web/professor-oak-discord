@@ -29,7 +29,7 @@ module.exports.run = (client, message, args) => {
   .setColor(0x00AE86)
   .setFooter(oak_name + " " + oak_version, oak_avi)
 
-  .setTitle("**" + name + " Raid**" + "\n@" + gym_name)
+  .setTitle("**" + name + " Raid!**" + "\n@" + gym_name)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/pokemon-icons/pokemon_icon_" + dex +"_00.png?raw=true")
   .setDescription("Despawn: " + raidTimer + " minutes left\n" + "Ex Raid Eligable: " + gym_ex_raid + "\nGym Access: " + gym_access + "\n[GET DIRECTIONS](" + gym_map + ")")
 
@@ -37,6 +37,6 @@ module.exports.run = (client, message, args) => {
 
   .setTimestamp()
 
-  client.channels.get("494640269455786003").send({embed});
+  client.channels.get("483107603333906454").send({embed});
 }
 
