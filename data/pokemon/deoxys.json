@@ -1,10 +1,10 @@
 {
-  "name": "Deoxy",
-  "dex": "386",
+  "name": "Deoxys",
+  "dex": "386_1",
   "trainers_needed": "2",
   "buddy_distance": "20KM",
-  "raid_boss_cp": "1320",
-  "raid_boss_cp_boosted": "1650",
+  "raid_boss_cp": "1570",
+  "raid_boss_cp_boosted": "1963",
   "counter_01": "Tyranitar",
   "counter_01_moveset": "Bite/Crunch",
   "counter_02": "Mewtwo",
@@ -15,7 +15,7 @@
   "counter_04_moveset": "Snarl / Foul Play",
   "counter_05": "Absol",
   "counter_05_moveset": "Snarl / Dark Pulse",
-  "counter_06": "Alolam Muk",
+  "counter_06": "Alolan Muk",
   "counter_06_moveset": "Bite / Dark Pulse",
   "counter_07": "Scizor",
   "counter_07_moveset": "Fury Cutter / X-Scissor"
