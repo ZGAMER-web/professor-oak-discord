@@ -1,21 +1,20 @@
 module.exports.run = (client, message, args) => {
   let raidEgg = args[0];
-  
   let gymData = args[1];
   let raidTimer = args[2];
+  
   const gym = require(`../data/gyms/${gymData}.json`);
   const gym_name = gym.name
   const gym_map = gym.map
   const gym_ex_raid = gym.ex_raid
   const gym_access = gym.access
 
-  
-
   const oak = require("../data/oak.json")
   const oak_name = oak.name
   const oak_version = oak.version
   const oak_avi = oak.avi
-  const deleteTimer = oak.deleteTimer_default
+  const deleteTimer = oak.deleteTimer_instant
+  const raidScanner = oak.raid_scanner
 
   message.delete(deleteTimer).catch(console.error);
   
@@ -31,7 +30,7 @@ module.exports.run = (client, message, args) => {
 
   .setTimestamp()
 
-  client.channels.get("494881248708263946").send({embed}).then(sentMessage => {
+  client.channels.get(raidScanner).send({embed}).then(sentMessage => {
     sentMessage.delete(3600000).catch(console.error);
   });
 }

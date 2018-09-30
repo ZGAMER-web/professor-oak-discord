@@ -2,6 +2,7 @@ module.exports.run = (client, message, args) => {
   let pokemonData = args[0];
   let gymData = args[1];
   let raidTimer = args[2];
+  
   const pokemon = require(`../data/pokemon/${pokemonData}.json`);
   const name = pokemon.name
   const dex = pokemon.dex
@@ -19,6 +20,7 @@ module.exports.run = (client, message, args) => {
   const oak_version = oak.version
   const oak_avi = oak.avi
   const deleteTimer = oak.deleteTimer_default
+  const raidScanner = oak.raid_scanner
 
   message.delete(deleteTimer).catch(console.error);
   
@@ -36,7 +38,7 @@ module.exports.run = (client, message, args) => {
 
   .setTimestamp()
 
-  client.channels.get("494881248708263946").send({embed}).then(sentMessage => {
+  client.channels.get(raidScanner).send({embed}).then(sentMessage => {
     sentMessage.delete(3600000).catch(console.error);
   });
 }
