@@ -14,7 +14,6 @@ module.exports.run = (client, message, args) => {
   const oak_version = oak.version
   const oak_avi = oak.avi
   const deleteTimer = oak.deleteTimer_instant
-  const raidScanner = oak.raid_scanner
 
   message.delete(deleteTimer).catch(console.error);
   
@@ -30,7 +29,7 @@ module.exports.run = (client, message, args) => {
 
   .setTimestamp()
 
-  client.channels.get(raidScanner).send({embed}).then(sentMessage => {
+  client.channels.get("496002609036001280").send({embed}).then(sentMessage => {
     sentMessage.delete(3600000).catch(console.error);
   });
 }
