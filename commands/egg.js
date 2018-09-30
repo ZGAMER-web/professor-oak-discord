@@ -27,7 +27,7 @@ module.exports.run = (client, message, args) => {
 
   .setTitle("**T" + raidEgg + " Raid!**" + "\n@" + gym_name)
   .setThumbnail("https://github.com/MrRecordHolder/professor-oak-discord/blob/master/images/assets/ic_raid_egg_" + raidEgg + ".png?raw=true")
-  .setDescription("Hatch: " + raidTimer + " minutes left\n" + "Ex Raid Eligable: " + gym_ex_raid + "\nGym Access: " + gym_access + "\n[GET DIRECTIONS](" + gym_map + ")")
+  .setDescription("Hatch Time: " + raidTimer + "\n" + "Ex Raid Eligable: " + gym_ex_raid + "\nGym Access: " + gym_access + "\n[GET DIRECTIONS](" + gym_map + ")")
 
   .setTimestamp()
 
