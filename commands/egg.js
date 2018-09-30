@@ -2,13 +2,14 @@ module.exports.run = (client, message, args) => {
   let raidEgg = args[0];
   
   let gymData = args[1];
+  let raidTimer = args[2];
   const gym = require(`../data/gyms/${gymData}.json`);
   const gym_name = gym.name
   const gym_map = gym.map
   const gym_ex_raid = gym.ex_raid
   const gym_access = gym.access
 
-  let raidTimer = args[2]
+  
 
   const oak = require("../data/oak.json")
   const oak_name = oak.name
